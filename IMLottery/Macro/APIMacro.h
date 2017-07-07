@@ -12,7 +12,7 @@
 
 // *******************************王隆帅**************************
 
-
+#define BASEURL @"http://appmgr.jwoquxoc.com/frontApi/getAboutUs"
 
 
 

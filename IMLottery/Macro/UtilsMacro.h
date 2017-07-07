@@ -27,10 +27,14 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define TABLE_BAR_SELECTCLOR 0xf96b6b
 #define MinebuttVolor    0xf96b6b
 
+#define LIGHT_BACK_BTN_IMAGE @"back_btn_black"
+#define DARK_BACK_BTN_IMAGE @"back_btn"
 
+#define LIGHT_QUESTION_IMAGE @"balck_question"
+#define DARK_QUESTION_IMAGE  @"questionP"
 
-
-
+#define TABBARH 49
+#define NAVBARH 64
 
 
 

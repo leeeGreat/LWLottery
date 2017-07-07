@@ -9,16 +9,6 @@
 #import "NetworkTool.h"
 #import "MyToast.h"
 #import "ActivityView.h"
-#import "PersonalInfo.h"
-#import "PublicDefine.pch"
-
-#define CHANNELKEY @"channel"
-#define CHANELVALUE @"02"
-
-#define SOURCEPRODUCTKEY @"sourceProduct"
-#define SOURCEPRODUCTVALUE @"02"
-
-#define ORGINATIONKEY @"sourceOrganizationNo"
 
 
 @implementation NetworkTool
@@ -47,14 +37,12 @@
     manager.requestSerializer.timeoutInterval =130;
     
     if (parameters==nil) {
-        parameters=@{CHANNELKEY:CHANELVALUE,SOURCEPRODUCTKEY:SOURCEPRODUCTVALUE,ORGINATIONKEY:ORGANIZATIONNO};
+        parameters = @{@"appid":@"jiuwcomceshi"};
     }
     else
     {
         NSMutableDictionary *dic=[[NSMutableDictionary alloc]initWithDictionary:parameters];
-        [dic setObject:CHANELVALUE forKey:CHANNELKEY];
-        [dic setObject:SOURCEPRODUCTVALUE forKey:SOURCEPRODUCTKEY];
-        [dic setObject:ORGANIZATIONNO forKey:ORGINATIONKEY];
+
         parameters=dic;
     }
     
@@ -65,7 +53,7 @@
             [manager GET:URLString parameters:parameters progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
                 
                 NSString *responseStr =  [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-                
+                NSLog(@"responseStr--%@",responseStr);
                 dispatch_async(dispatch_get_main_queue(), ^{
                     succeed([NetworkTool dictionaryWithJsonString:responseStr]);
                     [[ActivityView shareAcctivity]hiddeActivity];
@@ -87,43 +75,16 @@
         case METHOD_POST:
         {
             [manager POST:URLString parameters:parameters progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-                
                 NSString *responseStr =  [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-//                NSLog(@"responseStr == %@", responseStr);
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [[ActivityView shareAcctivity]hiddeActivity];
-                    NSDictionary *dic=[NetworkTool dictionaryWithJsonString:responseStr];
-                    if ([dic[@"resultCode"] isEqualToString:@"00000000"]) {
-                        succeed(dic);
-                    }
-                    else
-                    {
-                        if ([dic[@"resultCode"] isEqualToString:@"90000000"]) {
-                            [[PersonalInfo sharedInstance] setIsLogin:NO];
-                            NSError *error=[[NSError alloc] initWithDomain:dic[@"resultMessage"] code:[dic[@"resultCode"] integerValue] userInfo:nil];
-                            failure(error);
-                        }
-                        else if([dic[@"resultCode"] isEqualToString:@"99999999"])
-                        {
-                            succeed(dic);
-                        }
-                        else if([dic[@"resultCode"] isEqualToString:@"TRD05001"])
-                        {
-                            succeed(dic);
-                        }else if([dic[@"resultCode"] isEqualToString:@"12015002"]) // 人脸认证错误
-                        {
-                            [MyToast showWithText:@"验证失败，请稍候再试" duration:1.2];
-                            succeed(dic);
-                        }
-                        else
-                        {
-                            [MyToast showWithText:dic[@"resultMessage"] duration:1.2];
-                            NSError *error=[[NSError alloc] initWithDomain:dic[@"resultMessage"] code:[dic[@"resultCode"] integerValue] userInfo:nil];
-                            failure(error);
-                        }
-                    }
-                });                
+                NSDictionary *dic=[NetworkTool dictionaryWithJsonString:responseStr];
                 
+                NSLog(@"tongyongdic---%@",dic);
+                
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    succeed([NetworkTool dictionaryWithJsonString:responseStr]);
+                    [[ActivityView shareAcctivity]hiddeActivity];
+                });
+
             } failure:^(NSURLSessionDataTask *task, NSError *error) {
 //                NSLog(@"error == %@", error);
                 [[ActivityView shareAcctivity]hiddeActivity];
@@ -162,14 +123,13 @@
     manager.requestSerializer.timeoutInterval =130;
     
     if (parameters==nil) {
-        parameters=@{CHANNELKEY:CHANELVALUE,SOURCEPRODUCTKEY:SOURCEPRODUCTVALUE,ORGINATIONKEY:ORGANIZATIONNO};
+        parameters = @{@"appid":@"jiuwcomceshi"};
     }
     else
     {
         NSMutableDictionary *dic=[[NSMutableDictionary alloc]initWithDictionary:parameters];
-        [dic setObject:CHANELVALUE forKey:CHANNELKEY];
-        [dic setObject:SOURCEPRODUCTVALUE forKey:SOURCEPRODUCTKEY];
-        [dic setObject:ORGANIZATIONNO forKey:ORGINATIONKEY];
+        
+        
         parameters=dic;
     }
 
@@ -202,47 +162,24 @@
             
         case METHOD_POST:
         {
-            [manager POST:URLString parameters:parameters progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+            [manager POST:URLString parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 
-                NSString *responseStr =  [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+                
+                 NSString *responseStr =  [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+                NSDictionary *dic=[NetworkTool dictionaryWithJsonString:responseStr];
+
+                NSLog(@"tongyongdic---%@",dic);
+                
+                
                 
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    NSDictionary *dic=[NetworkTool dictionaryWithJsonString:responseStr];
-                    if ([dic[@"resultCode"] isEqualToString:@"00000000"]) {
-                        succeed(dic);
-                    }
-                    else
-                    {
-                        if ([dic[@"resultCode"] isEqualToString:@"90000000"]) {
-                            [[PersonalInfo sharedInstance] setIsLogin:NO];
-                            NSError *error=[[NSError alloc] initWithDomain:dic[@"resultMessage"] code:[dic[@"resultCode"] integerValue] userInfo:nil];
-                            failure(error);
-                        }
-                        else if([dic[@"resultCode"] isEqualToString:@"99999999"])
-                        {
-                            succeed(dic);
-                        }
-                        else if([dic[@"resultCode"] isEqualToString:@"TRD05001"])
-                        {
-                            succeed(dic);
-                        }
-                        else
-                        {
-                            [MyToast showWithText:dic[@"resultMessage"] duration:1.2];
-                            NSError *error=[[NSError alloc] initWithDomain:dic[@"resultMessage"] code:[dic[@"resultCode"] integerValue] userInfo:nil];
-                            failure(error);
-                        }
-                        
-                    }
+                    succeed([NetworkTool dictionaryWithJsonString:responseStr]);
+                    [[ActivityView shareAcctivity]hiddeActivity];
                 });
-                
-                
-                
-            } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                [MyToast showWithText:@"请求失败，请稍后再试" duration:1.2];
+
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                 [MyToast showWithText:@"请求失败，请稍后再试" duration:1.2];
                 failure(error);
-                
-                
             }];
         }
             break;
@@ -270,14 +207,13 @@
     manager.requestSerializer.timeoutInterval =30;
     
     if (parameters==nil) {
-        parameters=@{CHANNELKEY:CHANELVALUE,SOURCEPRODUCTKEY:SOURCEPRODUCTVALUE,ORGINATIONKEY:ORGANIZATIONNO};
+        
+        
     }
     else
     {
         NSMutableDictionary *dic=[[NSMutableDictionary alloc]initWithDictionary:parameters];
-        [dic setObject:CHANELVALUE forKey:CHANNELKEY];
-        [dic setObject:SOURCEPRODUCTVALUE forKey:SOURCEPRODUCTKEY];
-        [dic setObject:ORGANIZATIONNO forKey:ORGINATIONKEY];
+      
         parameters=dic;
     }
 
@@ -294,7 +230,7 @@
             else
             {
                 if ([dic[@"resultCode"] isEqualToString:@"90000000"]) {
-                    [[PersonalInfo sharedInstance] setIsLogin:NO];
+                   
                     NSError *error=[[NSError alloc] initWithDomain:dic[@"resultMessage"] code:[dic[@"resultCode"] integerValue] userInfo:nil];
                     failure(error);
                 }
@@ -405,7 +341,6 @@
             else
             {
                 if ([dic[@"resultCode"] isEqualToString:@"90000000"]) {
-                    [[PersonalInfo sharedInstance] setIsLogin:NO];
                     NSError *error=[[NSError alloc] initWithDomain:dic[@"resultMessage"] code:[dic[@"resultCode"] integerValue] userInfo:nil];
                     fail(error);
                 }

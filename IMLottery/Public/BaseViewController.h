@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseUI.h"
 #import "MyToast.h"
 
 typedef enum {

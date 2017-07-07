@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "ChangeTablebar.h"
 #import "UIColor+MyColor.h"
 #import "HtmlWebVC.h"
 
@@ -91,6 +92,47 @@
     [_clickBtn setTintColor:[UIColor whiteColor]];
 }
 
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(nullable void *)context
+{
+    NSLog(@"observeValueForKeyPath");
+    if ([keyPath isEqualToString:@"backgroundColor"]) {
+        if ([self.navigationController.viewControllers count]>1&&[self.navigationController.viewControllers indexOfObject:self] > 0) {
+            if (self.backBtn!=nil) {
+                [_backBtn removeFromSuperview];
+            }
+            UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+            [backBtn setFrame:CGRectMake(8,20, 44,44)];
+            if ([self isDarkColor:_titleView.backgroundColor]) {
+                [backBtn setImage:[UIImage imageNamed:DARK_BACK_BTN_IMAGE] forState:UIControlStateNormal];
+                _titleLabel.textColor=[UIColor whiteColor];
+            }
+            else
+            {
+                [backBtn setImage:[UIImage imageNamed:LIGHT_BACK_BTN_IMAGE] forState:UIControlStateNormal];
+                _titleLabel.textColor=[UIColor blackColor];
+            }
+            
+            [backBtn setImageEdgeInsets:UIEdgeInsetsMake(12, 11, 12, 11)];
+            [backBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            [backBtn addTarget:self action:@selector(backBtnPress) forControlEvents:UIControlEventTouchUpInside];
+            [_titleView addSubview:backBtn];
+            self.backBtn = backBtn;
+        }
+
+    }
+}
+
+-(NSString *)getQuestionImageStr
+{
+    if ([self isDarkColor:_titleView.backgroundColor]) {
+        return DARK_QUESTION_IMAGE;
+    }
+    else
+    {
+        return LIGHT_QUESTION_IMAGE;
+    }
+}
+
 
 -(BOOL)isDarkColor:(UIColor *)newColor{
 
@@ -113,6 +155,16 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
+    
+    
+    if (self.navigationController!=nil&&[self.navigationController.viewControllers count]==2) {
+        [ChangeTablebar hiddenTableBar];
+    }
+    else if(self.navigationController!=nil&&[self.navigationController.viewControllers count]==1)
+    {
+        [ChangeTablebar showTableBar];
+    }
     if ([self isDarkColor:_titleView.backgroundColor]) {
         if ([UIApplication sharedApplication].statusBarStyle==UIStatusBarStyleDefault) {
             [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
@@ -139,7 +191,7 @@
 {
     HtmlWebVC *vc = [[HtmlWebVC alloc]init];
     vc.titleStr   = @"常见问题";
-    vc.urlStr     = @"http://www/baidu.com";
+    vc.urlStr = @"http://www.baidu.com";
     [self.navigationController pushViewController:vc animated:YES];
 }
 

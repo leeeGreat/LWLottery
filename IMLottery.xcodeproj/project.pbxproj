@@ -38,6 +38,14 @@
 		2A668FD41F0E3352008C1951 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FCF1F0E3352008C1951 /* UIView+SDExtension.m */; };
 		2A668FDA1F0E339B008C1951 /* ActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FD71F0E339B008C1951 /* ActivityView.m */; };
 		2A668FDB1F0E339B008C1951 /* LLARingSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FD91F0E339B008C1951 /* LLARingSpinnerView.m */; };
+		2A668FDF1F0F264D008C1951 /* NetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FDE1F0F264D008C1951 /* NetworkTool.m */; };
+		2A668FE21F0F618C008C1951 /* ChangeTablebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FE11F0F618C008C1951 /* ChangeTablebar.m */; };
+		2A668FE61F0F7A4F008C1951 /* ActivityListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FE41F0F7A4F008C1951 /* ActivityListCell.m */; };
+		2A668FE71F0F7A4F008C1951 /* ActivityListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A668FE51F0F7A4F008C1951 /* ActivityListCell.xib */; };
+		2A668FEA1F0F82AA008C1951 /* ActivityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FE91F0F82AA008C1951 /* ActivityModel.m */; };
+		2A668FED1F0F934E008C1951 /* LottoryListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FEC1F0F934E008C1951 /* LottoryListModel.m */; };
+		2A668FF01F0F9835008C1951 /* LunboListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FEF1F0F9835008C1951 /* LunboListModel.m */; };
+		2A668FF31F0F98AD008C1951 /* ZixunListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FF21F0F98AD008C1951 /* ZixunListModel.m */; };
 		31184A910FE16C22D163DE8F /* libPods-IMLottery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE8B43C3DEC4318721C3F4A /* libPods-IMLottery.a */; };
 		B27943361D6A9D9D007749DC /* bjdc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943191D6A9D9D007749DC /* bjdc_howto.html */; };
 		B27943371D6A9D9D007749DC /* coupon_help.html in Resources */ = {isa = PBXBuildFile; fileRef = B279431A1D6A9D9D007749DC /* coupon_help.html */; };
@@ -162,6 +170,21 @@
 		2A668FD71F0E339B008C1951 /* ActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityView.m; sourceTree = "<group>"; };
 		2A668FD81F0E339B008C1951 /* LLARingSpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLARingSpinnerView.h; sourceTree = "<group>"; };
 		2A668FD91F0E339B008C1951 /* LLARingSpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLARingSpinnerView.m; sourceTree = "<group>"; };
+		2A668FDD1F0F264D008C1951 /* NetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTool.h; sourceTree = "<group>"; };
+		2A668FDE1F0F264D008C1951 /* NetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTool.m; sourceTree = "<group>"; };
+		2A668FE01F0F618C008C1951 /* ChangeTablebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeTablebar.h; sourceTree = "<group>"; };
+		2A668FE11F0F618C008C1951 /* ChangeTablebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeTablebar.m; sourceTree = "<group>"; };
+		2A668FE31F0F7A4F008C1951 /* ActivityListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityListCell.h; sourceTree = "<group>"; };
+		2A668FE41F0F7A4F008C1951 /* ActivityListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityListCell.m; sourceTree = "<group>"; };
+		2A668FE51F0F7A4F008C1951 /* ActivityListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityListCell.xib; sourceTree = "<group>"; };
+		2A668FE81F0F82AA008C1951 /* ActivityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityModel.h; sourceTree = "<group>"; };
+		2A668FE91F0F82AA008C1951 /* ActivityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityModel.m; sourceTree = "<group>"; };
+		2A668FEB1F0F934E008C1951 /* LottoryListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LottoryListModel.h; sourceTree = "<group>"; };
+		2A668FEC1F0F934E008C1951 /* LottoryListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LottoryListModel.m; sourceTree = "<group>"; };
+		2A668FEE1F0F9835008C1951 /* LunboListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LunboListModel.h; sourceTree = "<group>"; };
+		2A668FEF1F0F9835008C1951 /* LunboListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LunboListModel.m; sourceTree = "<group>"; };
+		2A668FF11F0F98AD008C1951 /* ZixunListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZixunListModel.h; sourceTree = "<group>"; };
+		2A668FF21F0F98AD008C1951 /* ZixunListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZixunListModel.m; sourceTree = "<group>"; };
 		B27943191D6A9D9D007749DC /* bjdc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bjdc_howto.html; sourceTree = "<group>"; };
 		B279431A1D6A9D9D007749DC /* coupon_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = coupon_help.html; sourceTree = "<group>"; };
 		B279431B1D6A9D9D007749DC /* credit_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credit_help.html; sourceTree = "<group>"; };
@@ -237,6 +260,7 @@
 		2A668F4C1F0DD352008C1951 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2A668FDC1F0F264D008C1951 /* LWNetwork */,
 				2A668FC41F0E3352008C1951 /* Third */,
 				2A668FBB1F0E3171008C1951 /* UIColor+MyColor.h */,
 				2A668FBC1F0E3171008C1951 /* UIColor+MyColor.m */,
@@ -289,6 +313,11 @@
 				2A668FA31F0E2E33008C1951 /* HistoryController.h */,
 				2A668FA41F0E2E33008C1951 /* HistoryController.m */,
 				2A668FA51F0E2E33008C1951 /* HistoryController.xib */,
+				2A668FE31F0F7A4F008C1951 /* ActivityListCell.h */,
+				2A668FE41F0F7A4F008C1951 /* ActivityListCell.m */,
+				2A668FE51F0F7A4F008C1951 /* ActivityListCell.xib */,
+				2A668FE81F0F82AA008C1951 /* ActivityModel.h */,
+				2A668FE91F0F82AA008C1951 /* ActivityModel.m */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -306,6 +335,8 @@
 		2A668F961F0E2D6D008C1951 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				2A668FE01F0F618C008C1951 /* ChangeTablebar.h */,
+				2A668FE11F0F618C008C1951 /* ChangeTablebar.m */,
 				2A668FC11F0E31DB008C1951 /* BaseUI.h */,
 				2A668FC21F0E31DB008C1951 /* BaseUI.m */,
 				2A668FBE1F0E31A0008C1951 /* HtmlWebVC.h */,
@@ -326,6 +357,12 @@
 				2A668F9E1F0E2E22008C1951 /* HomeController.h */,
 				2A668F9F1F0E2E22008C1951 /* HomeController.m */,
 				2A668FA01F0E2E22008C1951 /* HomeController.xib */,
+				2A668FEB1F0F934E008C1951 /* LottoryListModel.h */,
+				2A668FEC1F0F934E008C1951 /* LottoryListModel.m */,
+				2A668FEE1F0F9835008C1951 /* LunboListModel.h */,
+				2A668FEF1F0F9835008C1951 /* LunboListModel.m */,
+				2A668FF11F0F98AD008C1951 /* ZixunListModel.h */,
+				2A668FF21F0F98AD008C1951 /* ZixunListModel.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -379,6 +416,15 @@
 				2A668FD91F0E339B008C1951 /* LLARingSpinnerView.m */,
 			);
 			path = Activity;
+			sourceTree = "<group>";
+		};
+		2A668FDC1F0F264D008C1951 /* LWNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				2A668FDD1F0F264D008C1951 /* NetworkTool.h */,
+				2A668FDE1F0F264D008C1951 /* NetworkTool.m */,
+			);
+			path = LWNetwork;
 			sourceTree = "<group>";
 		};
 		8A113AE5CCEE382590A840DA /* Pods */ = {
@@ -627,6 +673,7 @@
 				2A668FA71F0E2E33008C1951 /* HistoryController.xib in Resources */,
 				B27943501D6A9D9D007749DC /* x3d_howto.html in Resources */,
 				B279433D1D6A9D9D007749DC /* help.html in Resources */,
+				2A668FE71F0F7A4F008C1951 /* ActivityListCell.xib in Resources */,
 				B279433C1D6A9D9D007749DC /* group_record.html in Resources */,
 				B27943451D6A9D9D007749DC /* kl8_howto.html in Resources */,
 				B27943491D6A9D9D007749DC /* pl5_howto.html in Resources */,
@@ -728,7 +775,9 @@
 				2A668F741F0DD564008C1951 /* NSString+Encode.m in Sources */,
 				2A668F701F0DD564008C1951 /* NSArray+Extension.m in Sources */,
 				2A668F5A1F0DD352008C1951 /* NSString+Contains.m in Sources */,
+				2A668FF01F0F9835008C1951 /* LunboListModel.m in Sources */,
 				2A668FD41F0E3352008C1951 /* UIView+SDExtension.m in Sources */,
+				2A668FF31F0F98AD008C1951 /* ZixunListModel.m in Sources */,
 				2A668F721F0DD564008C1951 /* NSDictionary+Extension.m in Sources */,
 				2A668FAF1F0E2EB0008C1951 /* MytableBarVC.m in Sources */,
 				2A668F6E1F0DD564008C1951 /* GiFHUD.m in Sources */,
@@ -736,14 +785,18 @@
 				B28F60C61D6436730073813B /* AppDelegate.m in Sources */,
 				2A668F731F0DD564008C1951 /* NSDictionary+QBSafeAccess.m in Sources */,
 				2A668FBA1F0E3106008C1951 /* MyToast.m in Sources */,
+				2A668FE21F0F618C008C1951 /* ChangeTablebar.m in Sources */,
 				2A668FA11F0E2E22008C1951 /* HomeController.m in Sources */,
 				2A668F5D1F0DD352008C1951 /* UIView+Extension.m in Sources */,
 				B28F60C31D6436730073813B /* main.m in Sources */,
 				2A668F711F0DD564008C1951 /* NSArray+QBSafeAccess.m in Sources */,
+				2A668FEA1F0F82AA008C1951 /* ActivityModel.m in Sources */,
 				2A668FD31F0E3352008C1951 /* SDRefreshView.m in Sources */,
 				2A668FA61F0E2E33008C1951 /* HistoryController.m in Sources */,
 				2A668FBD1F0E3171008C1951 /* UIColor+MyColor.m in Sources */,
 				2A668F5C1F0DD352008C1951 /* UIColor+Extension.m in Sources */,
+				2A668FDF1F0F264D008C1951 /* NetworkTool.m in Sources */,
+				2A668FE61F0F7A4F008C1951 /* ActivityListCell.m in Sources */,
 				2A668F9C1F0E2D6D008C1951 /* LWNavController.m in Sources */,
 				2A668FC01F0E31A0008C1951 /* HtmlWebVC.m in Sources */,
 				2A668FC31F0E31DB008C1951 /* BaseUI.m in Sources */,
@@ -751,6 +804,7 @@
 				2A668FDB1F0E339B008C1951 /* LLARingSpinnerView.m in Sources */,
 				2A668FAB1F0E2E41008C1951 /* MineController.m in Sources */,
 				2A668FDA1F0E339B008C1951 /* ActivityView.m in Sources */,
+				2A668FED1F0F934E008C1951 /* LottoryListModel.m in Sources */,
 				2A668FD21F0E3352008C1951 /* SDRefreshHeaderView.m in Sources */,
 				2A668F6F1F0DD564008C1951 /* iToast.m in Sources */,
 			);
