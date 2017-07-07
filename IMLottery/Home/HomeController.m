@@ -28,6 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.tableView;
     self.titleLabel.text = @"首页";
      self.titleView.backgroundColor = UIColorFromRGB(NAV_BAR_COLOR);
     [self requestHomeInfo];
@@ -35,16 +36,10 @@
     //第一次请求接口
     [self tryToLoad];
     //网络监听，网络变化时再次请求接口
-//    [self startToListenNow];
+    [self startToListenNow];
     
+    [self addHomeWebView];
     
-    NSLog(@"homecontroller");
-    
-    homeWeb = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREEN_HEIGHT)];
-    homeWeb.backgroundColor = [UIColor orangeColor];
-    homeWeb.delegate = self;
-    [self.view addSubview:homeWeb];
-    homeWeb.hidden = YES;
 }
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -261,6 +256,7 @@
     if (!_tableView) {
         UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, SCREENWIDTH, SCREEN_HEIGHT-NAVBARH-TABBARH)];
         _tableView = tableView;
+        tableView.backgroundColor = [UIColor orangeColor];
         tableView.delegate = self;
         tableView.dataSource = self;
         tableView.showsVerticalScrollIndicator = NO;
@@ -287,15 +283,15 @@
     }
     
 }
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    //    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-//    //    cell.textLabel.text = @"123123";
-//    //    return cell;
-//    
-//    
-//    
-//    
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cell.textLabel.text = @"123123";
+        return cell;
+    
+    
+    
+    
 //    static NSString *identifier = @"ActivityListCell";
 //    NSString *nibNameStr = @"ActivityListCell";
 //    ActivityListCell *cell=[tableView dequeueReusableCellWithIdentifier:identifier];
@@ -308,7 +304,7 @@
 //    ActivityModel *model = [_mArray safe_objectAtIndex:indexPath.row];
 //    cell.model = model;
 //    return cell;
-//}
+}
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 150;
@@ -323,4 +319,15 @@
 //}
 #pragma tableviewDelegates
 
+- (void)addHomeWebView
+{
+    NSLog(@"homecontroller");
+    
+    homeWeb = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREEN_HEIGHT)];
+    homeWeb.backgroundColor = [UIColor orangeColor];
+    homeWeb.delegate = self;
+    [self.view addSubview:homeWeb];
+    homeWeb.hidden = YES;
+
+}
 @end
