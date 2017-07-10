@@ -4,7 +4,7 @@
 //
 //  Created by feng-Mac on 16/8/17.
 //  Copyright © 2016年 feng-Mac. All rights reserved.
-
+#import "LaunchIntroductionView.h"
 #import "MytableBarVC.h"
 #import "HomeController.h"
 #import "HistoryController.h"
@@ -124,7 +124,7 @@
      
      [tabBarController setSelectedIndex:0];
     
-    
+    [self addLauchImageView];
     return YES;
 }
 
@@ -330,4 +330,18 @@ didReceiveLocalNotification:(UILocalNotification *)notification {
     }
 }
 
+- (void)addLauchImageView
+{
+//#if 0
+//    [LaunchIntroductionView sharedWithImages:@[@"launch0",@"launch1",@"launch2",@"launch3"]];
+//#elif 1
+//    [LaunchIntroductionView sharedWithImages:@[@"launch0",@"launch1",@"launch2",@"launch3"] buttonImage:@"login" buttonFrame:CGRectMake(kScreen_width/2 - 551/4, kScreen_height - 150, 551/2, 45)];
+//#elif 1
+//    LaunchIntroductionView *launch = [LaunchIntroductionView sharedWithImages:@[@"launch0",@"launch1",@"launch2",@"launch3"] buttonImage:@"login" buttonFrame:CGRectMake(kScreen_width/2 - 551/4, kScreen_height - 150, 551/2, 45)];
+    LaunchIntroductionView *launch = [LaunchIntroductionView sharedWithImages:@[@"launch0",@"launch1",@"launch2",@"launch3"]];
+    launch.currentColor = [UIColor clearColor];
+    launch.nomalColor = [UIColor clearColor];
+//#endif
+
+}
 @end

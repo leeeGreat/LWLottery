@@ -55,6 +55,7 @@
 		2A6690271F136F9D008C1951 /* HelpCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6690261F136F9D008C1951 /* HelpCenterController.m */; };
 		2A6690291F137038008C1951 /* help.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A6690281F137038008C1951 /* help.json */; };
 		2A66902C1F137601008C1951 /* LocalHtmlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A66902B1F137601008C1951 /* LocalHtmlVC.m */; };
+		2A6690461F138D2C008C1951 /* LaunchIntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6690451F138D2C008C1951 /* LaunchIntroductionView.m */; };
 		31184A910FE16C22D163DE8F /* libPods-IMLottery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE8B43C3DEC4318721C3F4A /* libPods-IMLottery.a */; };
 		B27943361D6A9D9D007749DC /* bjdc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943191D6A9D9D007749DC /* bjdc_howto.html */; };
 		B27943371D6A9D9D007749DC /* coupon_help.html in Resources */ = {isa = PBXBuildFile; fileRef = B279431A1D6A9D9D007749DC /* coupon_help.html */; };
@@ -88,7 +89,6 @@
 		B28F60C31D6436730073813B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B28F60C21D6436730073813B /* main.m */; };
 		B28F60C61D6436730073813B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B28F60C51D6436730073813B /* AppDelegate.m */; };
 		B28F60CE1D6436730073813B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28F60CD1D6436730073813B /* Assets.xcassets */; };
-		B28F60D11D6436730073813B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28F60CF1D6436730073813B /* LaunchScreen.storyboard */; };
 		B28F60DC1D6436730073813B /* IMLotteryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B28F60DB1D6436730073813B /* IMLotteryTests.m */; };
 		B28F60E71D6436730073813B /* IMLotteryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B28F60E61D6436730073813B /* IMLotteryUITests.m */; };
 /* End PBXBuildFile section */
@@ -209,6 +209,8 @@
 		2A6690281F137038008C1951 /* help.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = help.json; sourceTree = "<group>"; };
 		2A66902A1F137601008C1951 /* LocalHtmlVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalHtmlVC.h; sourceTree = "<group>"; };
 		2A66902B1F137601008C1951 /* LocalHtmlVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalHtmlVC.m; sourceTree = "<group>"; };
+		2A6690441F138D2C008C1951 /* LaunchIntroductionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchIntroductionView.h; sourceTree = "<group>"; };
+		2A6690451F138D2C008C1951 /* LaunchIntroductionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchIntroductionView.m; sourceTree = "<group>"; };
 		B27943191D6A9D9D007749DC /* bjdc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bjdc_howto.html; sourceTree = "<group>"; };
 		B279431A1D6A9D9D007749DC /* coupon_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = coupon_help.html; sourceTree = "<group>"; };
 		B279431B1D6A9D9D007749DC /* credit_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credit_help.html; sourceTree = "<group>"; };
@@ -243,7 +245,6 @@
 		B28F60C41D6436730073813B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B28F60C51D6436730073813B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B28F60CD1D6436730073813B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = IMLottery/Assets.xcassets; sourceTree = "<group>"; };
-		B28F60D01D6436730073813B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B28F60D21D6436730073813B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B28F60D71D6436730073813B /* IMLotteryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMLotteryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28F60DB1D6436730073813B /* IMLotteryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMLotteryTests.m; sourceTree = "<group>"; };
@@ -364,6 +365,8 @@
 		2A668F961F0E2D6D008C1951 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				2A6690441F138D2C008C1951 /* LaunchIntroductionView.h */,
+				2A6690451F138D2C008C1951 /* LaunchIntroductionView.m */,
 				2A668FE01F0F618C008C1951 /* ChangeTablebar.h */,
 				2A668FE11F0F618C008C1951 /* ChangeTablebar.m */,
 				2A668FC11F0E31DB008C1951 /* BaseUI.h */,
@@ -562,7 +565,6 @@
 		B28F60C11D6436730073813B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B28F60CF1D6436730073813B /* LaunchScreen.storyboard */,
 				B28F60D21D6436730073813B /* Info.plist */,
 				B28F60C21D6436730073813B /* main.m */,
 				B27943181D6A9D9D007749DC /* Html */,
@@ -704,7 +706,6 @@
 			files = (
 				B27943391D6A9D9D007749DC /* dlt_howto.html in Resources */,
 				B27943461D6A9D9D007749DC /* lk11_howto.html in Resources */,
-				B28F60D11D6436730073813B /* LaunchScreen.storyboard in Resources */,
 				2A668FF81F132C83008C1951 /* ZixunlistCell.xib in Resources */,
 				B27943401D6A9D9D007749DC /* jczq_howto.html in Resources */,
 				B279434E1D6A9D9D007749DC /* ssc_howto.html in Resources */,
@@ -836,6 +837,7 @@
 				2A668F5D1F0DD352008C1951 /* UIView+Extension.m in Sources */,
 				2A66902C1F137601008C1951 /* LocalHtmlVC.m in Sources */,
 				B28F60C31D6436730073813B /* main.m in Sources */,
+				2A6690461F138D2C008C1951 /* LaunchIntroductionView.m in Sources */,
 				2A668F711F0DD564008C1951 /* NSArray+QBSafeAccess.m in Sources */,
 				2A668FEA1F0F82AA008C1951 /* ActivityModel.m in Sources */,
 				2A668FD31F0E3352008C1951 /* SDRefreshView.m in Sources */,
@@ -888,17 +890,6 @@
 			targetProxy = B28F60E31D6436730073813B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B28F60CF1D6436730073813B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B28F60D01D6436730073813B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B28F60E91D6436730073813B /* Debug */ = {
@@ -988,6 +979,7 @@
 			baseConfigurationReference = BCA5723B6A8418506CE4FEB4 /* Pods-IMLottery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = IMLottery/IMLottery.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ting Yang (EBJ7344WKM)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ting Yang (EBJ7344WKM)";
@@ -1008,6 +1000,7 @@
 			baseConfigurationReference = 07D5C4EE2FF3BC9DCEE17292 /* Pods-IMLottery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = IMLottery/IMLottery.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ting Yang (EBJ7344WKM)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ting Yang (EBJ7344WKM)";
