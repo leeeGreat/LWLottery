@@ -314,9 +314,8 @@ didReceiveLocalNotification:(UILocalNotification *)notification {
 
 - (void)customizeTabBarForController:(RDVTabBarController *)tabBarController {
     
-    NSArray *tabBarItemImages = @[@"home", @"history", @"mine"];
-//    NSArray *titleArray       = @[@"购彩大厅", @"开奖信息", @"我的"];
-    NSArray *titleArray       = @[@"", @"", @""];
+    NSArray *tabBarItemImages = @[@"home", @"lottery", @"my"];
+    NSArray *titleArray       = @[@"首页", @"活动", @"我的"];
     
     NSInteger index = 0;
     for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {

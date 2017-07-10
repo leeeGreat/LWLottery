@@ -27,7 +27,12 @@
 {
     //[_webView.scrollView removeObserver:_freshHeaderView forKeyPath:SDRefreshViewObservingkeyPath];
 }
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    //更改到这里
+    [[ActivityView shareAcctivity] showActivity];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -152,7 +157,7 @@
     if (self.needRefresh==YES) {
         return;
     }
-    [[ActivityView shareAcctivity] showActivity];
+//    [[ActivityView shareAcctivity] showActivity];
 }
 -(void)webViewDidFinishLoad:(UIWebView *)webView
 {

@@ -79,8 +79,17 @@
 //        label.textColor=[UIColor colorWithRed:253 green:143 blue:0 alpha:1.0];
 //        label.text=@"玩命加载中...";
 //        [self addSubview:label];
-//        
+//
 //        [self addSubview:_loadingImageView];
+        
+        
+        UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake(0,CGRectGetMaxY(_indicatorView.frame)+40,ACTIVITY_WIDTH,15)];
+        label.font=[UIFont systemFontOfSize:17.0];
+        label.textAlignment=NSTextAlignmentCenter;
+        label.textColor=[UIColor blackColor];
+        label.text=@"加载中...";
+        [self addSubview:label];
+
         
     }
     return self;
