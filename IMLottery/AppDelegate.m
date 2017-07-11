@@ -20,7 +20,9 @@
 @end
 
 @implementation AppDelegate
-
+{
+    int requestCount;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
@@ -124,7 +126,8 @@
      
      [tabBarController setSelectedIndex:0];
     
-    [self addLauchImageView];
+//    [self addLauchImageView];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addLauchImageView) name:@"addLauchImageView" object:nil];
     return YES;
 }
 
@@ -332,16 +335,25 @@ didReceiveLocalNotification:(UILocalNotification *)notification {
 
 - (void)addLauchImageView
 {
+    requestCount++;
+    
+    if (requestCount==1) {
+        
 //#if 0
 //    [LaunchIntroductionView sharedWithImages:@[@"launch0",@"launch1",@"launch2",@"launch3"]];
 //#elif 1
 //    [LaunchIntroductionView sharedWithImages:@[@"launch0",@"launch1",@"launch2",@"launch3"] buttonImage:@"login" buttonFrame:CGRectMake(kScreen_width/2 - 551/4, kScreen_height - 150, 551/2, 45)];
 //#elif 1
-//    LaunchIntroductionView *launch = [LaunchIntroductionView sharedWithImages:@[@"launch0",@"launch1",@"launch2",@"launch3"] buttonImage:@"login" buttonFrame:CGRectMake(kScreen_width/2 - 551/4, kScreen_height - 150, 551/2, 45)];
-    LaunchIntroductionView *launch = [LaunchIntroductionView sharedWithImages:@[@"launch0",@"launch1",@"launch2",@"launch3"]];
+    LaunchIntroductionView *launch = [LaunchIntroductionView sharedWithImages:@[@"launch0",@"launch1",@"launch2",@"launch3"] buttonImage:@"login" buttonFrame:CGRectMake(0, kScreen_height - 115*SCREEN_SCALE, SCREENWIDTH, 45)];
+//    LaunchIntroductionView *launch = [LaunchIntroductionView sharedWithImages:@[@"launch0",@"launch1",@"launch2",@"launch3"]];
     launch.currentColor = [UIColor clearColor];
     launch.nomalColor = [UIColor clearColor];
 //#endif
+    }
 
+}
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 @end

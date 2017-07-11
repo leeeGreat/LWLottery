@@ -31,11 +31,12 @@
 {
     [super viewWillAppear:animated];
     //更改到这里
-    [[ActivityView shareAcctivity] showActivity];
+//    [[ActivityView shareAcctivity] showActivity];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     self.titleLabel.text=_titleStr;
 //    self.titleLabel.textColor=[UIColor blackColor];
 //    self.titleView.backgroundColor=[UIColor whiteColor];
@@ -59,7 +60,16 @@
     [self.view addSubview:webView];
     self.webView=webView;
     if (_urlStr!=nil) {
-        [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_urlStr]]];
+//        [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_urlStr]]];
+        //超时时间15s
+        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:_urlStr]
+                                 
+                                                      cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
+                                 
+                                                  timeoutInterval:15];
+
+        [webView loadRequest:request];
+
     }
 //    self.titleView.backgroundColor=[UIColor whiteColor];
     
@@ -157,7 +167,8 @@
     if (self.needRefresh==YES) {
         return;
     }
-//    [[ActivityView shareAcctivity] showActivity];
+    [[ActivityView shareAcctivity] showActivity];
+     self.nodataView.hidden = YES;
 }
 -(void)webViewDidFinishLoad:(UIWebView *)webView
 {
@@ -168,6 +179,7 @@
 {
    // [self endRefresh];
     [[ActivityView shareAcctivity] hiddeActivity];
+    self.nodataView.hidden = NO;
 }
 
 -(void)closeBtnPress
@@ -199,15 +211,4 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

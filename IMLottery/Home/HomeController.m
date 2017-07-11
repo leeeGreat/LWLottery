@@ -5,6 +5,7 @@
 //  Created by qianbaoeo on 2017/7/6.
 //  Copyright © 2017年 feng-Mac. All rights reserved.
 //
+#import "ActivityView.h"
 #import "SecondController.h"
 #import "ZixunlistCell.h"
 #import "HtmlWebVC.h"
@@ -106,14 +107,12 @@
 - (void)requestGetAboutUs
 {
 
-    //test
-//    {"appid":"jiuwcomceshi","appname":"\u6d4b\u8bd5\u7528","isshowwap":"1","wapurl":"http://vip.9w100.com/","status":1,"desc":"\u6210\u529f\u8fd4\u56de\u6570\u636e"}
+    
     [NetworkTool requestAFURL:BASEURL httpMethod:0 parameters:nil succeed:^(id json) {
 //        NSDictionary *dic=
 //  @{@"appid":@"jiuwcomceshi",@"appname":@"\u6d4b\u8bd5\u7528",@"isshowwap":@"1",@"wapurl":@"http://vip.9w100.com/",@"status":@(1),@"desc":@"\u6210\u529f\u8fd4\u56de\u6570\u636e"};
 //        json = [NSDictionary dictionaryWithDictionary:dic];
-        json = nil;
-        
+//        json = nil;
         
         if ([json isKindOfClass:[NSString class]]||json ==nil||[json  isEqual:[NSNull null]]) {
             homeWeb.hidden = YES;
@@ -139,6 +138,9 @@
                     
                     
                     homeWeb.hidden = NO;
+                    //显示引导页
+                    [[NSNotificationCenter defaultCenter] postNotificationName:@"addLauchImageView" object:nil];
+                    
                     [ChangeTablebar hiddenTableBar];
                 }
                 else
@@ -156,7 +158,11 @@
         
         
     } failure:^(NSError *error) {
+        //加载自己的页面
+        homeWeb.hidden = YES;
+        [ChangeTablebar showTableBar];
         self.url = @"";
+
     }];
 
 }
@@ -195,59 +201,24 @@
 {
     [self requestGetAboutUs];
 }
-//请求方式
-//-(void)tryToLoad {
-//    NSURL *url1 = [NSURL URLWithString:[NSString stringWithFormat:@"http://appmgr.jwoquxoc.com/frontApi/getAboutUs"]];
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url1];
-//    request.timeoutInterval = 5.0;
-//    request.HTTPMethod = @"post";
-//    
-//    NSString *param = [NSString stringWithFormat:@"appid=%@",@"cbapp102"];
-//    request.HTTPBody = [param dataUsingEncoding:NSUTF8StringEncoding];
-//    NSURLResponse *response;
-//    NSError *error;
-//    NSData *backData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-//    if (error) {
-//        //[self setupContentVC];
-//        self.url = @"";
-//        [self createHtmlViewControl];
-//    }else{
-//        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:backData options:NSJSONReadingMutableContainers error:nil];
-//        
-//        NSLog(@"dic======%@",dic);
-//        if ([[dic objectForKey:@"status"] intValue]== 1) {
-//            NSLog(@"获取数据成功%@%@",[dic objectForKey:@"desc"],[dic objectForKey:@"appname"]);//
-//            self.url =  ([[dic objectForKey:@"isshowwap"] intValue]) == 1?[dic objectForKey:@"wapurl"] : @"";
-//            //self.url = @"http://www.baidu.com";
-//            //               self.url = @"http://www.11c8.com/index/index.html?wap=yes&appid=c8app16";
-//            if ([self.url isEqualToString:@""]) {
-//                //[self setupContentVC];
-//                self.url = @"";
-//                [self createHtmlViewControl];
-//            }else{
-//                [self createHtmlViewControl];
-//            }
-//        }else if ([[dic objectForKey:@"status"] intValue]== 2) {
-//            NSLog(@"获取数据失败");
-//            //[self setupContentVC];
-//            self.url = @"";
-//            [self createHtmlViewControl];
-//        }else{
-//            //[self setupContentVC];
-//            self.url = @"";
-//            [self createHtmlViewControl];
-//        }
-//    }
-//}
 
 
 #pragma mark webviewdelegate
+- (void)webViewDidStartLoad:(UIWebView *)webView
+{
+    [[ActivityView shareAcctivity] showActivity];
+}
 //webview加载失败，则reload
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
-    NSLog(@"didFailLoadWithError--%@",error);
-//    [webView reload];
     
+    NSLog(@"didFailLoadWithError--%@",error);
+    [[ActivityView shareAcctivity] hiddeActivity];
+    //
+    // 如果是被取消，什么也不干
+    if([error code] == NSURLErrorCancelled)  {
+        return;
+    }
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.url]
                              
                                                   cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
@@ -256,6 +227,10 @@
     [homeWeb loadRequest:request];
 
     
+}
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+     [[ActivityView shareAcctivity] hiddeActivity];
 }
 #pragma mark webviewdelegate
 
@@ -353,6 +328,14 @@
 {
     NSInteger iconsCount = _lunboListMArray.count;
     
+    
+    //test
+//    [_lunboListMArray removeObjectsInRange:NSMakeRange(1, iconsCount-1)];
+//    iconsCount = _lunboListMArray.count;
+//    NSLog(@"_lunboListMArray--%@",_lunboListMArray);
+    
+    
+    
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 100)];
     
     
@@ -370,14 +353,16 @@
         LunboListModel *model = [_lunboListMArray safe_objectAtIndex:i];
         NSLog(@"iconUrlStr--%@",model.mapAddress);
         UIImageView *lunboIconView = [[UIImageView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH*i, 0, SCREEN_WIDTH, 100)];
-        lunboIconView.tag = i+100;
+        
         if (i==iconsCount) {
              LunboListModel *modelLast = [_lunboListMArray safe_objectAtIndex:0];
              [lunboIconView sd_setImageWithURL:[NSURL URLWithString:modelLast.mapAddress]];
+            lunboIconView.tag = 0+100;
         }
         else
         {
              [lunboIconView sd_setImageWithURL:[NSURL URLWithString:model.mapAddress]];
+            lunboIconView.tag = i+100;
         }
         
         //imageView添加点击手势
@@ -404,7 +389,14 @@
     
     
     //启动定时器
-    rotateTimer = [NSTimer scheduledTimerWithTimeInterval:1.5 target:self selector:@selector(changeScrollViewOffset) userInfo:nil repeats:YES];
+    if (iconsCount<=1) {
+        
+    }
+    else
+    {
+        rotateTimer = [NSTimer scheduledTimerWithTimeInterval:1.5 target:self selector:@selector(changeScrollViewOffset) userInfo:nil repeats:YES];
+    }
+    
     
     
     

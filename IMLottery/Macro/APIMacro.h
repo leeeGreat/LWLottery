@@ -10,9 +10,9 @@
  *  本文件可放请求API 拼接的路径
  */
 
-// *******************************王隆帅**************************
 
-#define BASEURL @"http://appmgr.jwoquxoc.com/frontApi/getAboutUs"
+//256彩票
+#define BASEURL @"http://appid.qq-app.com/frontApi/getAboutUs"
 
 
 

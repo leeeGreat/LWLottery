@@ -22,11 +22,15 @@
     if (_titleView!=nil) {
         [_titleView removeObserver:self forKeyPath:@"backgroundColor"];
     }
+   
+    [_nodataView removeObserver:self forKeyPath:@"hidden"];
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     _titleView=[[UIView alloc] initWithFrame:CGRectMake(0, 0,SCREEN_WIDTH,64)];
     [_titleView addObserver:self forKeyPath:@"backgroundColor" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
     _titleLabel = [BaseUI newLabelWithFrame:CGRectMake(75,20,SCREEN_WIDTH-150,44) titleStr:nil andFont:[UIFont systemFontOfSize:18.0f] andColor:[UIColor whiteColor]];
@@ -90,11 +94,26 @@
     [_clickBtn setBackgroundImage:[UIImage imageNamed:@"redpic"] forState:UIControlStateNormal];
     _clickBtn.titleLabel.font = [UIFont systemFontOfSize:16.0];
     [_clickBtn setTintColor:[UIColor whiteColor]];
+    
+    
+    [self addNoDataView];
+    
+    [_nodataView addObserver:self forKeyPath:@"hidden" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(nullable void *)context
 {
     NSLog(@"observeValueForKeyPath");
+    
+    if ([keyPath isEqualToString:@"hidden"]) {
+        for (UIView *subView in self.view.subviews) {
+            if ([subView isKindOfClass:[UIWebView class]]) {
+                [self.view bringSubviewToFront:_nodataView];
+            }
+        }
+    }
+    
+    
     if ([keyPath isEqualToString:@"backgroundColor"]) {
         if ([self.navigationController.viewControllers count]>1&&[self.navigationController.viewControllers indexOfObject:self] > 0) {
             if (self.backBtn!=nil) {
@@ -226,14 +245,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)addNoDataView
+{
+    _nodataView = [[UIView alloc] initWithFrame:CGRectMake(0, NAVBARH, SCREENWIDTH, SCREEN_HEIGHT-NAVBARH)];
+    _nodataView.hidden = YES;
+    
+    [self.view addSubview:_nodataView];
+    
+    UILabel *infoLab = [[UILabel alloc] initWithFrame:CGRectMake(0, (SCREEN_HEIGHT-NAVBARH-TABBARH-20)/2, SCREENWIDTH, 20)];
+    infoLab.text = @"暂无数据";
+    infoLab.textAlignment = NSTextAlignmentCenter;
+    [_nodataView addSubview:infoLab];
+    infoLab.textColor = [UIColor lightGrayColor];
 }
-*/
 
 @end

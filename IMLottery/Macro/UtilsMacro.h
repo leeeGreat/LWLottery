@@ -36,7 +36,10 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define TABBARH 49
 #define NAVBARH 64
 
+#define APPID @"1258043960"
 
+
+#define SCREEN_SCALE  [[UIScreen mainScreen]bounds].size.width/375
 
 
 // 获取屏幕 宽度、高度 bounds就是屏幕的全部区域

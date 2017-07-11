@@ -37,7 +37,7 @@
     manager.requestSerializer.timeoutInterval =130;
     
     if (parameters==nil) {
-        parameters = @{@"appid":@"jiuwcomceshi"};
+        parameters = @{@"appid":APPID};
     }
     else
     {
@@ -123,7 +123,7 @@
     manager.requestSerializer.timeoutInterval =130;
     
     if (parameters==nil) {
-        parameters = @{@"appid":@"jiuwcomceshi"};
+        parameters = @{@"appid":APPID};
     }
     else
     {

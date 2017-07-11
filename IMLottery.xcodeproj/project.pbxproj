@@ -984,9 +984,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ting Yang (EBJ7344WKM)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ting Yang (EBJ7344WKM)";
 				DEVELOPMENT_TEAM = EBJ7344WKM;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/IMLottery/PrefixHeader.pch";
 				INFOPLIST_FILE = IMLottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qb.LWLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1005,9 +1007,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ting Yang (EBJ7344WKM)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ting Yang (EBJ7344WKM)";
 				DEVELOPMENT_TEAM = EBJ7344WKM;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/IMLottery/PrefixHeader.pch";
 				INFOPLIST_FILE = IMLottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qb.LWLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";

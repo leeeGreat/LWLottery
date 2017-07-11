@@ -129,6 +129,7 @@
     ActivityModel *model = [_mArray safe_objectAtIndex:indexPath.row];
     HtmlWebVC *web = [[HtmlWebVC alloc] init];
     web.urlStr = model.linkAddress;
+    web.titleLabel.text = @"活动详情";
     [self.navigationController pushViewController:web animated:YES];
 }
 #pragma tableviewDelegates

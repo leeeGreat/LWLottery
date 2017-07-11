@@ -39,6 +39,7 @@ typedef enum {
 @property (nonatomic, strong) UIButton *rightBtn;
 @property (nonatomic, strong) UIButton *clickBtn;
 
+@property (nonatomic,strong) UIView *nodataView;
 
 - (void)backBtnPress; 
 ///

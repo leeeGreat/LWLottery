@@ -94,20 +94,25 @@ NSString *storyboard;
 }
 #pragma mark - 判断是不是首次登录或者版本更新
 -(BOOL )isFirstLauch{
-    //获取当前版本号
-    NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
-    NSString *currentAppVersion = infoDic[@"CFBundleShortVersionString"];
-    //获取上次启动应用保存的appVersion
-    NSString *version = [[NSUserDefaults standardUserDefaults] objectForKey:kAppVersion];
-    //版本升级或首次登录
-    if (version == nil || ![version isEqualToString:currentAppVersion]) {
-        [[NSUserDefaults standardUserDefaults] setObject:currentAppVersion forKey:kAppVersion];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-        return YES;
-    }else{
-        return NO;
-    }
+   
+    return YES;
 }
+
+//-(BOOL )isFirstLauch{
+//    //获取当前版本号
+//    NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
+//    NSString *currentAppVersion = infoDic[@"CFBundleShortVersionString"];
+//    //获取上次启动应用保存的appVersion
+//    NSString *version = [[NSUserDefaults standardUserDefaults] objectForKey:kAppVersion];
+//    //版本升级或首次登录
+//    if (version == nil || ![version isEqualToString:currentAppVersion]) {
+//        [[NSUserDefaults standardUserDefaults] setObject:currentAppVersion forKey:kAppVersion];
+//        [[NSUserDefaults standardUserDefaults] synchronize];
+//        return YES;
+//    }else{
+//        return NO;
+//    }
+//}
 #pragma mark - 添加引导页图片
 -(void)addImages{
     [self createScrollView];
@@ -129,6 +134,10 @@ NSString *storyboard;
             //判断要不要添加button
             if (!isScrollOut) {
                 UIButton *enterButton = [[UIButton alloc] initWithFrame:CGRectMake(enterBtnFrame.origin.x, enterBtnFrame.origin.y, enterBtnFrame.size.width, enterBtnFrame.size.height)];
+                [enterButton setTitle:@"立即进入" forState:UIControlStateNormal];
+                [enterButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+                
+                
                 [enterButton setImage:[UIImage imageNamed:enterBtnImage] forState:UIControlStateNormal];
                 [enterButton addTarget:self action:@selector(enterBtnClick) forControlEvents:UIControlEventTouchUpInside];
                 [imageView addSubview:enterButton];
