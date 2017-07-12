@@ -29,7 +29,11 @@
 {
     self.titleLab.text = model.title;
     self.summaryLab.text = model.summary;
-    self.typeNameLab.text = model.typeName;
+    self.typeNameLab.text = @"综合分析";
+    if (model.typeName.length>0) {
+        self.typeNameLab.text = model.typeName;
+    }
+    
     [self.photoIconView sd_setImageWithURL:[NSURL URLWithString:model.photo]];
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
