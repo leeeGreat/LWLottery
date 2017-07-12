@@ -56,6 +56,89 @@
 		2A6690291F137038008C1951 /* help.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A6690281F137038008C1951 /* help.json */; };
 		2A66902C1F137601008C1951 /* LocalHtmlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A66902B1F137601008C1951 /* LocalHtmlVC.m */; };
 		2A6690461F138D2C008C1951 /* LaunchIntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6690451F138D2C008C1951 /* LaunchIntroductionView.m */; };
+		2ABA431E1F1609DF00C5634F /* SDRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FC91F0E3352008C1951 /* SDRefreshFooterView.m */; };
+		2ABA431F1F1609DF00C5634F /* NSString+Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668F6D1F0DD564008C1951 /* NSString+Encode.m */; };
+		2ABA43201F1609DF00C5634F /* NSArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668F651F0DD564008C1951 /* NSArray+Extension.m */; };
+		2ABA43211F1609DF00C5634F /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FFA1F134FB6008C1951 /* SecondController.m */; };
+		2ABA43221F1609DF00C5634F /* ZixunlistCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FF51F132C83008C1951 /* ZixunlistCell.m */; };
+		2ABA43231F1609DF00C5634F /* ZixunListMoreModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6690021F13564C008C1951 /* ZixunListMoreModel.m */; };
+		2ABA43241F1609DF00C5634F /* NSString+Contains.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668F521F0DD352008C1951 /* NSString+Contains.m */; };
+		2ABA43251F1609DF00C5634F /* LunboListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FEF1F0F9835008C1951 /* LunboListModel.m */; };
+		2ABA43261F1609DF00C5634F /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FCF1F0E3352008C1951 /* UIView+SDExtension.m */; };
+		2ABA43271F1609DF00C5634F /* ZixunListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FF21F0F98AD008C1951 /* ZixunListModel.m */; };
+		2ABA43281F1609DF00C5634F /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668F691F0DD564008C1951 /* NSDictionary+Extension.m */; };
+		2ABA43291F1609DF00C5634F /* MytableBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FAE1F0E2EB0008C1951 /* MytableBarVC.m */; };
+		2ABA432A1F1609DF00C5634F /* GiFHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668F601F0DD564008C1951 /* GiFHUD.m */; };
+		2ABA432B1F1609DF00C5634F /* ZixunMoreListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FFD1F1355C2008C1951 /* ZixunMoreListCell.m */; };
+		2ABA432C1F1609DF00C5634F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668F981F0E2D6D008C1951 /* BaseViewController.m */; };
+		2ABA432D1F1609DF00C5634F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B28F60C51D6436730073813B /* AppDelegate.m */; };
+		2ABA432E1F1609DF00C5634F /* NSDictionary+QBSafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668F6B1F0DD564008C1951 /* NSDictionary+QBSafeAccess.m */; };
+		2ABA432F1F1609DF00C5634F /* MyToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FB91F0E3106008C1951 /* MyToast.m */; };
+		2ABA43301F1609DF00C5634F /* ChangeTablebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FE11F0F618C008C1951 /* ChangeTablebar.m */; };
+		2ABA43311F1609DF00C5634F /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668F9F1F0E2E22008C1951 /* HomeController.m */; };
+		2ABA43321F1609DF00C5634F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668F571F0DD352008C1951 /* UIView+Extension.m */; };
+		2ABA43331F1609DF00C5634F /* LocalHtmlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A66902B1F137601008C1951 /* LocalHtmlVC.m */; };
+		2ABA43341F1609DF00C5634F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B28F60C21D6436730073813B /* main.m */; };
+		2ABA43351F1609DF00C5634F /* LaunchIntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6690451F138D2C008C1951 /* LaunchIntroductionView.m */; };
+		2ABA43361F1609DF00C5634F /* NSArray+QBSafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668F671F0DD564008C1951 /* NSArray+QBSafeAccess.m */; };
+		2ABA43371F1609DF00C5634F /* ActivityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FE91F0F82AA008C1951 /* ActivityModel.m */; };
+		2ABA43381F1609DF00C5634F /* SDRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FCD1F0E3352008C1951 /* SDRefreshView.m */; };
+		2ABA43391F1609DF00C5634F /* HistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FA41F0E2E33008C1951 /* HistoryController.m */; };
+		2ABA433A1F1609DF00C5634F /* UIColor+MyColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FBC1F0E3171008C1951 /* UIColor+MyColor.m */; };
+		2ABA433B1F1609DF00C5634F /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668F551F0DD352008C1951 /* UIColor+Extension.m */; };
+		2ABA433C1F1609DF00C5634F /* NetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FDE1F0F264D008C1951 /* NetworkTool.m */; };
+		2ABA433D1F1609DF00C5634F /* ActivityListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FE41F0F7A4F008C1951 /* ActivityListCell.m */; };
+		2ABA433E1F1609DF00C5634F /* LWNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668F9A1F0E2D6D008C1951 /* LWNavController.m */; };
+		2ABA433F1F1609DF00C5634F /* HtmlWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FBF1F0E31A0008C1951 /* HtmlWebVC.m */; };
+		2ABA43401F1609DF00C5634F /* BaseUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FC21F0E31DB008C1951 /* BaseUI.m */; };
+		2ABA43411F1609DF00C5634F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2A668F531F0DD352008C1951 /* README.md */; };
+		2ABA43421F1609DF00C5634F /* LLARingSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FD91F0E339B008C1951 /* LLARingSpinnerView.m */; };
+		2ABA43431F1609DF00C5634F /* MineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FA91F0E2E41008C1951 /* MineController.m */; };
+		2ABA43441F1609DF00C5634F /* HelpCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6690261F136F9D008C1951 /* HelpCenterController.m */; };
+		2ABA43451F1609DF00C5634F /* ActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FD71F0E339B008C1951 /* ActivityView.m */; };
+		2ABA43461F1609DF00C5634F /* LottoryListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FEC1F0F934E008C1951 /* LottoryListModel.m */; };
+		2ABA43471F1609DF00C5634F /* SDRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668FCB1F0E3352008C1951 /* SDRefreshHeaderView.m */; };
+		2ABA43481F1609DF00C5634F /* iToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668F621F0DD564008C1951 /* iToast.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2ABA434A1F1609DF00C5634F /* libPods-IMLottery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE8B43C3DEC4318721C3F4A /* libPods-IMLottery.a */; };
+		2ABA434C1F1609DF00C5634F /* dlt_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B279431C1D6A9D9D007749DC /* dlt_howto.html */; };
+		2ABA434D1F1609DF00C5634F /* lk11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943291D6A9D9D007749DC /* lk11_howto.html */; };
+		2ABA434E1F1609DF00C5634F /* ZixunlistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A668FF61F132C83008C1951 /* ZixunlistCell.xib */; };
+		2ABA434F1F1609DF00C5634F /* jczq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943231D6A9D9D007749DC /* jczq_howto.html */; };
+		2ABA43501F1609DF00C5634F /* ssc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943311D6A9D9D007749DC /* ssc_howto.html */; };
+		2ABA43511F1609DF00C5634F /* bjdc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943191D6A9D9D007749DC /* bjdc_howto.html */; };
+		2ABA43521F1609DF00C5634F /* MineController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A668FAA1F0E2E41008C1951 /* MineController.xib */; };
+		2ABA43531F1609DF00C5634F /* HistoryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A668FA51F0E2E33008C1951 /* HistoryController.xib */; };
+		2ABA43541F1609DF00C5634F /* x3d_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943331D6A9D9D007749DC /* x3d_howto.html */; };
+		2ABA43551F1609DF00C5634F /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943201D6A9D9D007749DC /* help.html */; };
+		2ABA43561F1609DF00C5634F /* ActivityListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A668FE51F0F7A4F008C1951 /* ActivityListCell.xib */; };
+		2ABA43571F1609DF00C5634F /* group_record.html in Resources */ = {isa = PBXBuildFile; fileRef = B279431F1D6A9D9D007749DC /* group_record.html */; };
+		2ABA43581F1609DF00C5634F /* kl8_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943281D6A9D9D007749DC /* kl8_howto.html */; };
+		2ABA43591F1609DF00C5634F /* pl5_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B279432C1D6A9D9D007749DC /* pl5_howto.html */; };
+		2ABA435A1F1609DF00C5634F /* jclq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943221D6A9D9D007749DC /* jclq_howto.html */; };
+		2ABA435B1F1609DF00C5634F /* rule.css in Resources */ = {isa = PBXBuildFile; fileRef = B279432F1D6A9D9D007749DC /* rule.css */; };
+		2ABA435C1F1609DF00C5634F /* jxssc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943241D6A9D9D007749DC /* jxssc_howto.html */; };
+		2ABA435E1F1609DF00C5634F /* help.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A6690281F137038008C1951 /* help.json */; };
+		2ABA435F1F1609DF00C5634F /* pl3_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B279432B1D6A9D9D007749DC /* pl3_howto.html */; };
+		2ABA43601F1609DF00C5634F /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A668FA01F0E2E22008C1951 /* HomeController.xib */; };
+		2ABA43611F1609DF00C5634F /* f9_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B279431D1D6A9D9D007749DC /* f9_howto.html */; };
+		2ABA43621F1609DF00C5634F /* k3_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943271D6A9D9D007749DC /* k3_howto.html */; };
+		2ABA43631F1609DF00C5634F /* credit_help.html in Resources */ = {isa = PBXBuildFile; fileRef = B279431B1D6A9D9D007749DC /* credit_help.html */; };
+		2ABA43641F1609DF00C5634F /* gdy11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B279431E1D6A9D9D007749DC /* gdy11_howto.html */; };
+		2ABA43651F1609DF00C5634F /* jxy11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943251D6A9D9D007749DC /* jxy11_howto.html */; };
+		2ABA43661F1609DF00C5634F /* networkconnectedfailed.html in Resources */ = {isa = PBXBuildFile; fileRef = B279432A1D6A9D9D007749DC /* networkconnectedfailed.html */; };
+		2ABA43671F1609DF00C5634F /* qlc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B279432D1D6A9D9D007749DC /* qlc_howto.html */; };
+		2ABA43681F1609DF00C5634F /* k2_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943261D6A9D9D007749DC /* k2_howto.html */; };
+		2ABA43691F1609DF00C5634F /* qxc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B279432E1D6A9D9D007749DC /* qxc_howto.html */; };
+		2ABA436A1F1609DF00C5634F /* znzh.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943351D6A9D9D007749DC /* znzh.html */; };
+		2ABA436B1F1609DF00C5634F /* ssq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943321D6A9D9D007749DC /* ssq_howto.html */; };
+		2ABA436C1F1609DF00C5634F /* y11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943341D6A9D9D007749DC /* y11_howto.html */; };
+		2ABA436D1F1609DF00C5634F /* sfc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943301D6A9D9D007749DC /* sfc_howto.html */; };
+		2ABA436E1F1609DF00C5634F /* sdRefeshView_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A668FC61F0E3352008C1951 /* sdRefeshView_arrow@2x.png */; };
+		2ABA436F1F1609DF00C5634F /* coupon_help.html in Resources */ = {isa = PBXBuildFile; fileRef = B279431A1D6A9D9D007749DC /* coupon_help.html */; };
+		2ABA43701F1609DF00C5634F /* helpGroupBuy.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943211D6A9D9D007749DC /* helpGroupBuy.html */; };
+		2ABA43711F1609DF00C5634F /* ZixunMoreListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A668FFE1F1355C2008C1951 /* ZixunMoreListCell.xib */; };
+		2ABA437A1F160E4100C5634F /* InfoSecond.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA43791F160E4100C5634F /* InfoSecond.plist */; };
+		2ABA437D1F16217C00C5634F /* AssetsSecond.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA437B1F16101800C5634F /* AssetsSecond.xcassets */; };
 		31184A910FE16C22D163DE8F /* libPods-IMLottery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE8B43C3DEC4318721C3F4A /* libPods-IMLottery.a */; };
 		B27943361D6A9D9D007749DC /* bjdc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943191D6A9D9D007749DC /* bjdc_howto.html */; };
 		B27943371D6A9D9D007749DC /* coupon_help.html in Resources */ = {isa = PBXBuildFile; fileRef = B279431A1D6A9D9D007749DC /* coupon_help.html */; };
@@ -211,6 +294,10 @@
 		2A66902B1F137601008C1951 /* LocalHtmlVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalHtmlVC.m; sourceTree = "<group>"; };
 		2A6690441F138D2C008C1951 /* LaunchIntroductionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchIntroductionView.h; sourceTree = "<group>"; };
 		2A6690451F138D2C008C1951 /* LaunchIntroductionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchIntroductionView.m; sourceTree = "<group>"; };
+		2ABA43771F1609DF00C5634F /* IMLotterySecond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMLotterySecond.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ABA43781F1609E000C5634F /* IMLottery copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "IMLottery copy-Info.plist"; path = "/Users/qianbaoeo/Desktop/LWPrivateProj/LWLottery/IMLottery copy-Info.plist"; sourceTree = "<absolute>"; };
+		2ABA43791F160E4100C5634F /* InfoSecond.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InfoSecond.plist; sourceTree = "<group>"; };
+		2ABA437B1F16101800C5634F /* AssetsSecond.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = AssetsSecond.xcassets; path = IMLottery/AssetsSecond.xcassets; sourceTree = "<group>"; };
 		B27943191D6A9D9D007749DC /* bjdc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bjdc_howto.html; sourceTree = "<group>"; };
 		B279431A1D6A9D9D007749DC /* coupon_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = coupon_help.html; sourceTree = "<group>"; };
 		B279431B1D6A9D9D007749DC /* credit_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credit_help.html; sourceTree = "<group>"; };
@@ -257,6 +344,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2ABA43491F1609DF00C5634F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABA434A1F1609DF00C5634F /* libPods-IMLottery.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B28F60BB1D6436730073813B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -525,6 +620,7 @@
 		B28F60B51D6436730073813B = {
 			isa = PBXGroup;
 			children = (
+				2ABA437B1F16101800C5634F /* AssetsSecond.xcassets */,
 				B28F60C01D6436730073813B /* IMLottery */,
 				B28F60DA1D6436730073813B /* IMLotteryTests */,
 				B28F60E51D6436730073813B /* IMLotteryUITests */,
@@ -532,6 +628,7 @@
 				B28F60CD1D6436730073813B /* Assets.xcassets */,
 				8A113AE5CCEE382590A840DA /* Pods */,
 				8EAE123123400D1B62C7F790 /* Frameworks */,
+				2ABA43781F1609E000C5634F /* IMLottery copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -541,6 +638,7 @@
 				B28F60BE1D6436730073813B /* IMLottery.app */,
 				B28F60D71D6436730073813B /* IMLotteryTests.xctest */,
 				B28F60E21D6436730073813B /* IMLotteryUITests.xctest */,
+				2ABA43771F1609DF00C5634F /* IMLotterySecond.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -565,6 +663,7 @@
 		B28F60C11D6436730073813B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2ABA43791F160E4100C5634F /* InfoSecond.plist */,
 				B28F60D21D6436730073813B /* Info.plist */,
 				B28F60C21D6436730073813B /* main.m */,
 				B27943181D6A9D9D007749DC /* Html */,
@@ -594,6 +693,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2ABA431B1F1609DF00C5634F /* IMLotterySecond */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ABA43741F1609DF00C5634F /* Build configuration list for PBXNativeTarget "IMLotterySecond" */;
+			buildPhases = (
+				2ABA431C1F1609DF00C5634F /* [CP] Check Pods Manifest.lock */,
+				2ABA431D1F1609DF00C5634F /* Sources */,
+				2ABA43491F1609DF00C5634F /* Frameworks */,
+				2ABA434B1F1609DF00C5634F /* Resources */,
+				2ABA43721F1609DF00C5634F /* [CP] Embed Pods Frameworks */,
+				2ABA43731F1609DF00C5634F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IMLotterySecond;
+			productName = IMLottery;
+			productReference = 2ABA43771F1609DF00C5634F /* IMLotterySecond.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B28F60BD1D6436730073813B /* IMLottery */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B28F60EB1D6436730073813B /* Build configuration list for PBXNativeTarget "IMLottery" */;
@@ -659,6 +778,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "feng-Mac";
 				TargetAttributes = {
+					2ABA431B1F1609DF00C5634F = {
+						DevelopmentTeam = EBJ7344WKM;
+					};
 					B28F60BD1D6436730073813B = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = EBJ7344WKM;
@@ -695,6 +817,7 @@
 			projectRoot = "";
 			targets = (
 				B28F60BD1D6436730073813B /* IMLottery */,
+				2ABA431B1F1609DF00C5634F /* IMLotterySecond */,
 				B28F60D61D6436730073813B /* IMLotteryTests */,
 				B28F60E11D6436730073813B /* IMLotteryUITests */,
 			);
@@ -702,6 +825,51 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2ABA434B1F1609DF00C5634F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABA434C1F1609DF00C5634F /* dlt_howto.html in Resources */,
+				2ABA434D1F1609DF00C5634F /* lk11_howto.html in Resources */,
+				2ABA434E1F1609DF00C5634F /* ZixunlistCell.xib in Resources */,
+				2ABA434F1F1609DF00C5634F /* jczq_howto.html in Resources */,
+				2ABA43501F1609DF00C5634F /* ssc_howto.html in Resources */,
+				2ABA43511F1609DF00C5634F /* bjdc_howto.html in Resources */,
+				2ABA43521F1609DF00C5634F /* MineController.xib in Resources */,
+				2ABA43531F1609DF00C5634F /* HistoryController.xib in Resources */,
+				2ABA43541F1609DF00C5634F /* x3d_howto.html in Resources */,
+				2ABA43551F1609DF00C5634F /* help.html in Resources */,
+				2ABA43561F1609DF00C5634F /* ActivityListCell.xib in Resources */,
+				2ABA43571F1609DF00C5634F /* group_record.html in Resources */,
+				2ABA43581F1609DF00C5634F /* kl8_howto.html in Resources */,
+				2ABA43591F1609DF00C5634F /* pl5_howto.html in Resources */,
+				2ABA435A1F1609DF00C5634F /* jclq_howto.html in Resources */,
+				2ABA435B1F1609DF00C5634F /* rule.css in Resources */,
+				2ABA435C1F1609DF00C5634F /* jxssc_howto.html in Resources */,
+				2ABA435E1F1609DF00C5634F /* help.json in Resources */,
+				2ABA435F1F1609DF00C5634F /* pl3_howto.html in Resources */,
+				2ABA43601F1609DF00C5634F /* HomeController.xib in Resources */,
+				2ABA43611F1609DF00C5634F /* f9_howto.html in Resources */,
+				2ABA43621F1609DF00C5634F /* k3_howto.html in Resources */,
+				2ABA43631F1609DF00C5634F /* credit_help.html in Resources */,
+				2ABA43641F1609DF00C5634F /* gdy11_howto.html in Resources */,
+				2ABA43651F1609DF00C5634F /* jxy11_howto.html in Resources */,
+				2ABA43661F1609DF00C5634F /* networkconnectedfailed.html in Resources */,
+				2ABA43671F1609DF00C5634F /* qlc_howto.html in Resources */,
+				2ABA43681F1609DF00C5634F /* k2_howto.html in Resources */,
+				2ABA43691F1609DF00C5634F /* qxc_howto.html in Resources */,
+				2ABA436A1F1609DF00C5634F /* znzh.html in Resources */,
+				2ABA436B1F1609DF00C5634F /* ssq_howto.html in Resources */,
+				2ABA436C1F1609DF00C5634F /* y11_howto.html in Resources */,
+				2ABA436D1F1609DF00C5634F /* sfc_howto.html in Resources */,
+				2ABA436E1F1609DF00C5634F /* sdRefeshView_arrow@2x.png in Resources */,
+				2ABA437D1F16217C00C5634F /* AssetsSecond.xcassets in Resources */,
+				2ABA436F1F1609DF00C5634F /* coupon_help.html in Resources */,
+				2ABA43701F1609DF00C5634F /* helpGroupBuy.html in Resources */,
+				2ABA43711F1609DF00C5634F /* ZixunMoreListCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B28F60BC1D6436730073813B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -732,6 +900,7 @@
 				B27943381D6A9D9D007749DC /* credit_help.html in Resources */,
 				B279433B1D6A9D9D007749DC /* gdy11_howto.html in Resources */,
 				B27943421D6A9D9D007749DC /* jxy11_howto.html in Resources */,
+				2ABA437A1F160E4100C5634F /* InfoSecond.plist in Resources */,
 				B27943471D6A9D9D007749DC /* networkconnectedfailed.html in Resources */,
 				B279434A1D6A9D9D007749DC /* qlc_howto.html in Resources */,
 				B27943431D6A9D9D007749DC /* k2_howto.html in Resources */,
@@ -779,6 +948,51 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IMLottery/Pods-IMLottery-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2ABA431C1F1609DF00C5634F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2ABA43721F1609DF00C5634F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IMLottery/Pods-IMLottery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2ABA43731F1609DF00C5634F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IMLottery/Pods-IMLottery-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		47A896D2F0CF7FE288D5FC48 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -812,6 +1026,56 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2ABA431D1F1609DF00C5634F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABA431E1F1609DF00C5634F /* SDRefreshFooterView.m in Sources */,
+				2ABA431F1F1609DF00C5634F /* NSString+Encode.m in Sources */,
+				2ABA43201F1609DF00C5634F /* NSArray+Extension.m in Sources */,
+				2ABA43211F1609DF00C5634F /* SecondController.m in Sources */,
+				2ABA43221F1609DF00C5634F /* ZixunlistCell.m in Sources */,
+				2ABA43231F1609DF00C5634F /* ZixunListMoreModel.m in Sources */,
+				2ABA43241F1609DF00C5634F /* NSString+Contains.m in Sources */,
+				2ABA43251F1609DF00C5634F /* LunboListModel.m in Sources */,
+				2ABA43261F1609DF00C5634F /* UIView+SDExtension.m in Sources */,
+				2ABA43271F1609DF00C5634F /* ZixunListModel.m in Sources */,
+				2ABA43281F1609DF00C5634F /* NSDictionary+Extension.m in Sources */,
+				2ABA43291F1609DF00C5634F /* MytableBarVC.m in Sources */,
+				2ABA432A1F1609DF00C5634F /* GiFHUD.m in Sources */,
+				2ABA432B1F1609DF00C5634F /* ZixunMoreListCell.m in Sources */,
+				2ABA432C1F1609DF00C5634F /* BaseViewController.m in Sources */,
+				2ABA432D1F1609DF00C5634F /* AppDelegate.m in Sources */,
+				2ABA432E1F1609DF00C5634F /* NSDictionary+QBSafeAccess.m in Sources */,
+				2ABA432F1F1609DF00C5634F /* MyToast.m in Sources */,
+				2ABA43301F1609DF00C5634F /* ChangeTablebar.m in Sources */,
+				2ABA43311F1609DF00C5634F /* HomeController.m in Sources */,
+				2ABA43321F1609DF00C5634F /* UIView+Extension.m in Sources */,
+				2ABA43331F1609DF00C5634F /* LocalHtmlVC.m in Sources */,
+				2ABA43341F1609DF00C5634F /* main.m in Sources */,
+				2ABA43351F1609DF00C5634F /* LaunchIntroductionView.m in Sources */,
+				2ABA43361F1609DF00C5634F /* NSArray+QBSafeAccess.m in Sources */,
+				2ABA43371F1609DF00C5634F /* ActivityModel.m in Sources */,
+				2ABA43381F1609DF00C5634F /* SDRefreshView.m in Sources */,
+				2ABA43391F1609DF00C5634F /* HistoryController.m in Sources */,
+				2ABA433A1F1609DF00C5634F /* UIColor+MyColor.m in Sources */,
+				2ABA433B1F1609DF00C5634F /* UIColor+Extension.m in Sources */,
+				2ABA433C1F1609DF00C5634F /* NetworkTool.m in Sources */,
+				2ABA433D1F1609DF00C5634F /* ActivityListCell.m in Sources */,
+				2ABA433E1F1609DF00C5634F /* LWNavController.m in Sources */,
+				2ABA433F1F1609DF00C5634F /* HtmlWebVC.m in Sources */,
+				2ABA43401F1609DF00C5634F /* BaseUI.m in Sources */,
+				2ABA43411F1609DF00C5634F /* README.md in Sources */,
+				2ABA43421F1609DF00C5634F /* LLARingSpinnerView.m in Sources */,
+				2ABA43431F1609DF00C5634F /* MineController.m in Sources */,
+				2ABA43441F1609DF00C5634F /* HelpCenterController.m in Sources */,
+				2ABA43451F1609DF00C5634F /* ActivityView.m in Sources */,
+				2ABA43461F1609DF00C5634F /* LottoryListModel.m in Sources */,
+				2ABA43471F1609DF00C5634F /* SDRefreshHeaderView.m in Sources */,
+				2ABA43481F1609DF00C5634F /* iToast.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B28F60BA1D6436730073813B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -894,6 +1158,62 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2ABA43751F1609DF00C5634F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA5723B6A8418506CE4FEB4 /* Pods-IMLottery.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = IMLottery/IMLottery.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ting Yang (EBJ7344WKM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ting Yang (EBJ7344WKM)";
+				DEVELOPMENT_TEAM = EBJ7344WKM;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/IMLottery/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					SecondApp,
+				);
+				INFOPLIST_FILE = IMLottery/InfoSecond.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qb.LWLotterySecond;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2a000a91-4ed2-48d3-acb4-7ace221fe6cb";
+				PROVISIONING_PROFILE_SPECIFIER = lottery_provision_product_second_adhoc;
+			};
+			name = Debug;
+		};
+		2ABA43761F1609DF00C5634F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07D5C4EE2FF3BC9DCEE17292 /* Pods-IMLottery.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = IMLottery/IMLottery.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ting Yang (EBJ7344WKM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ting Yang (EBJ7344WKM)";
+				DEVELOPMENT_TEAM = EBJ7344WKM;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/IMLottery/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					SecondApp,
+				);
+				INFOPLIST_FILE = IMLottery/InfoSecond.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qb.LWLotterySecond;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2a000a91-4ed2-48d3-acb4-7ace221fe6cb";
+				PROVISIONING_PROFILE_SPECIFIER = lottery_provision_product_second_adhoc;
+			};
+			name = Release;
+		};
 		B28F60E91D6436730073813B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -912,8 +1232,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Ting Yang (EBJ7344WKM)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ting Yang (EBJ7344WKM)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = EBJ7344WKM;
@@ -936,7 +1256,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "6e524e1a-8387-44e8-8dc5-2678b5912ece";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -959,8 +1279,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Ting Yang (EBJ7344WKM)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ting Yang (EBJ7344WKM)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = EBJ7344WKM;
@@ -976,7 +1296,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "6e524e1a-8387-44e8-8dc5-2678b5912ece";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -995,13 +1315,18 @@
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/IMLottery/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					FirstApp,
+				);
 				INFOPLIST_FILE = IMLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qb.LWLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6e524e1a-8387-44e8-8dc5-2678b5912ece";
-				PROVISIONING_PROFILE_SPECIFIER = online_product_proversion;
+				PROVISIONING_PROFILE = "01f4a7d3-5d38-4523-afd7-ff83e949b0b0";
+				PROVISIONING_PROFILE_SPECIFIER = lottery_provision_product_adhoc;
 			};
 			name = Debug;
 		};
@@ -1018,13 +1343,18 @@
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/IMLottery/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					FirstApp,
+				);
 				INFOPLIST_FILE = IMLottery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qb.LWLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6e524e1a-8387-44e8-8dc5-2678b5912ece";
-				PROVISIONING_PROFILE_SPECIFIER = online_product_proversion;
+				PROVISIONING_PROFILE = "7d2c4ab6-f67a-494a-adca-669e2ecbab33";
+				PROVISIONING_PROFILE_SPECIFIER = lottery_provision_product_adhoc;
 			};
 			name = Release;
 		};
@@ -1077,6 +1407,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2ABA43741F1609DF00C5634F /* Build configuration list for PBXNativeTarget "IMLotterySecond" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ABA43751F1609DF00C5634F /* Debug */,
+				2ABA43761F1609DF00C5634F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B28F60B91D6436730073813B /* Build configuration list for PBXProject "IMLottery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

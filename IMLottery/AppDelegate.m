@@ -70,7 +70,7 @@
     //  }
     
     //如不需要使用IDFA，advertisingIdentifier 可为nil
-    [JPUSHService setupWithOption:launchOptions appKey:appKey
+    [JPUSHService setupWithOption:launchOptions appKey:JGAPPKEY
                           channel:channel
                  apsForProduction:isProduction
             advertisingIdentifier:advertisingId];

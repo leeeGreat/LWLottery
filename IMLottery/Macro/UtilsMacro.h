@@ -36,7 +36,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define TABBARH 49
 #define NAVBARH 64
 
-#define APPID @"1258043960"
+//#define APPID @"1258043960"
 
 
 #define SCREEN_SCALE  [[UIScreen mainScreen]bounds].size.width/375
@@ -97,8 +97,15 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 
+//#define JGAPPKEY @"005c785b38d1e6ef6dee28fc"
 
-
+#if defined (FirstApp)
+#define APPID @"1258043960"
+#define JGAPPKEY @"005c785b38d1e6ef6dee28fc"
+#elif defined (SecondApp)
+#define APPID @"eeeeeee"
+#define JGAPPKEY @"421384ecc8e52654a5e9d596"
+#endif
 
 
 
