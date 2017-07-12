@@ -103,7 +103,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define APPID @"1258043960"
 #define JGAPPKEY @"005c785b38d1e6ef6dee28fc"
 #elif defined (SecondApp)
-#define APPID @"eeeeeee"
+#define APPID @"1258547113"
 #define JGAPPKEY @"421384ecc8e52654a5e9d596"
 #endif
 
