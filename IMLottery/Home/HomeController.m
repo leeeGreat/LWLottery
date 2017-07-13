@@ -27,6 +27,7 @@
 
 @implementation HomeController
 {
+    UIView *maskView;
     UIWebView *homeWeb;
     UIPageControl *pageControl;
     NSTimer *rotateTimer;
@@ -39,13 +40,14 @@
     
     self.titleLabel.text = @"首页";
      self.titleView.backgroundColor = UIColorFromRGB(NAV_BAR_COLOR);
-    [self requestHomeInfo];
+//    [self requestHomeInfo];
     
     //第一次请求接口
     [self tryToLoad];
     //网络监听，网络变化时再次请求接口
     [self startToListenNow];
     
+    [self addMaskView];
     [self addHomeWebView];
     
 }
@@ -115,7 +117,9 @@
 //        json = nil;
         
         if ([json isKindOfClass:[NSString class]]||json ==nil||[json  isEqual:[NSNull null]]) {
+            maskView.hidden = YES;
             homeWeb.hidden = YES;
+            [self requestHomeInfo];
         }
         else if([json isKindOfClass:[NSDictionary class]])
         {
@@ -134,9 +138,11 @@
                                                                   cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
                                              
                                                               timeoutInterval:TIMEOUT];
+                    [NSObject cancelPreviousPerformRequestsWithTarget:self];//可以成功取消全部。
+                    [self performSelector:@selector(removeActivityView) withObject:nil afterDelay:TIMEOUT];
                     [homeWeb loadRequest:request];
                     
-                    
+                    maskView.hidden = NO;
                     homeWeb.hidden = NO;
                     //显示引导页
                     [[NSNotificationCenter defaultCenter] postNotificationName:@"addLauchImageView" object:nil];
@@ -146,7 +152,10 @@
                 else
                 {
                     //加载自己的页面
+                    
+                    maskView.hidden = YES;
                     homeWeb.hidden = YES;
+                    [self requestHomeInfo];
                     [ChangeTablebar showTableBar];
                     self.url = @"";
                 }
@@ -159,7 +168,9 @@
         
     } failure:^(NSError *error) {
         //加载自己的页面
+        maskView.hidden = YES;
         homeWeb.hidden = YES;
+        [self requestHomeInfo];
         [ChangeTablebar showTableBar];
         self.url = @"";
 
@@ -224,6 +235,8 @@
                                                   cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
                              
                                               timeoutInterval:TIMEOUT];
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];//可以成功取消全部。
+    [self performSelector:@selector(removeActivityView) withObject:nil afterDelay:TIMEOUT];
     [homeWeb loadRequest:request];
 
     
@@ -311,13 +324,20 @@
     return 30;
 }
 #pragma tableviewDelegates
+- (void)addMaskView
+{
+    maskView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREEN_HEIGHT)];
+    maskView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:maskView];
+    maskView.hidden = NO;
+}
 
 - (void)addHomeWebView
 {
     NSLog(@"homecontroller");
     
     homeWeb = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREEN_HEIGHT)];
-    
+    homeWeb.scalesPageToFit = YES;
     homeWeb.delegate = self;
     [self.view addSubview:homeWeb];
     homeWeb.hidden = YES;
@@ -476,5 +496,10 @@
 {
     SecondController *secondVC = [[SecondController alloc] init];
     [self.navigationController pushViewController:secondVC animated:YES];
+}
+
+- (void)removeActivityView
+{
+    [[ActivityView shareAcctivity] hiddeActivity];
 }
 @end

@@ -5,7 +5,7 @@
 //  Created by user on 15/3/27.
 //
 //
-
+#import "LaunchIntroductionView.h"
 #import "ActivityView.h"
 #import "LLARingSpinnerView.h"
 #import "AppDelegate.h"
@@ -114,6 +114,14 @@
     _countShowNum++;
     //[_spinnerView startAnimating];
    
+    
+    //新加将引导图加到loading框上面
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    for (UIView *subView in window.subviews) {
+        if ([subView isKindOfClass:[LaunchIntroductionView class]]) {
+            [window bringSubviewToFront:subView];
+        }
+    }
 }
 -(void)stopImageAnimation
 {

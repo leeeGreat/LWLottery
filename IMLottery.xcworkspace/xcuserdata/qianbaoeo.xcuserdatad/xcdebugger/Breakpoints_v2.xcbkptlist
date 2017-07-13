@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IMLottery/Home/HomeController.m"
-            timestampString = "521461162.91443"
+            timestampString = "521622155.676541"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "466"
-            endingLineNumber = "466"
+            startingLineNumber = "486"
+            endingLineNumber = "486"
             landmarkName = "-tapIconViewAction:"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IMLottery/Home/HomeController.m"
-            timestampString = "521461162.91443"
+            timestampString = "521622155.676541"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "472"
-            endingLineNumber = "472"
+            startingLineNumber = "492"
+            endingLineNumber = "492"
             landmarkName = "-tapIconViewAction:"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IMLottery/Home/HomeController.m"
-            timestampString = "521461162.91443"
+            timestampString = "521622155.676541"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "352"
-            endingLineNumber = "352"
+            startingLineNumber = "372"
+            endingLineNumber = "372"
             landmarkName = "-addHeaderView"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IMLottery/Home/HomeController.m"
-            timestampString = "521459085.707441"
+            timestampString = "521622155.676541"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
             landmarkName = "-requestGetAboutUs"
             landmarkType = "7">
          </BreakpointContent>

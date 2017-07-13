@@ -1181,8 +1181,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qb.LWLotterySecond;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2a000a91-4ed2-48d3-acb4-7ace221fe6cb";
-				PROVISIONING_PROFILE_SPECIFIER = lottery_provision_product_second_adhoc;
+				PROVISIONING_PROFILE = "a72ea5b4-51bd-459f-b0cd-493fcedfa1bf";
+				PROVISIONING_PROFILE_SPECIFIER = online_product_second_proversion;
 			};
 			name = Debug;
 		};
@@ -1209,8 +1209,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qb.LWLotterySecond;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2a000a91-4ed2-48d3-acb4-7ace221fe6cb";
-				PROVISIONING_PROFILE_SPECIFIER = lottery_provision_product_second_adhoc;
+				PROVISIONING_PROFILE = "a72ea5b4-51bd-459f-b0cd-493fcedfa1bf";
+				PROVISIONING_PROFILE_SPECIFIER = online_product_second_proversion;
 			};
 			name = Release;
 		};

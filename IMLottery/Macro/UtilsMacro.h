@@ -22,7 +22,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 #define SCREEN_SCALE  [[UIScreen mainScreen]bounds].size.width/375
 
-#define NAV_BAR_COLOR    0xf9602b//0xffffff//0xf9866b
+//#define NAV_BAR_COLOR    0xf9602b//0xffffff//0xf9866b
 #define VIEW_BACK_COLOR  0xebebef
 #define TABLE_BAR_SELECTCLOR 0xf96b6b
 #define MinebuttVolor    0xf96b6b
@@ -102,9 +102,11 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #if defined (FirstApp)
 #define APPID @"1258043960"
 #define JGAPPKEY @"005c785b38d1e6ef6dee28fc"
+#define NAV_BAR_COLOR    0xf9602b//0xffffff//0xf9866b
 #elif defined (SecondApp)
 #define APPID @"1258547113"
 #define JGAPPKEY @"421384ecc8e52654a5e9d596"
+#define NAV_BAR_COLOR    0xf8855b//0xffffff//0xf9866b
 #endif
 
 
