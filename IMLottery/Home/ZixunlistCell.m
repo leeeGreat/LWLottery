@@ -18,7 +18,7 @@
 {
     [super layoutSubviews];
     self.typeNameLab.layer.cornerRadius = 5;
-    self.typeNameLab.layer.borderColor =[UIColor orangeColor].CGColor;
+    self.typeNameLab.layer.borderColor =[UIColor myColorWithString:@"54BE15"].CGColor;
     self.typeNameLab.layer.borderWidth = 1;
     self.typeNameLab.layer.masksToBounds  = YES;
     self.typeNameLab.clipsToBounds = YES;

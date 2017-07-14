@@ -139,6 +139,16 @@
 		2ABA43711F1609DF00C5634F /* ZixunMoreListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A668FFE1F1355C2008C1951 /* ZixunMoreListCell.xib */; };
 		2ABA437A1F160E4100C5634F /* InfoSecond.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA43791F160E4100C5634F /* InfoSecond.plist */; };
 		2ABA437D1F16217C00C5634F /* AssetsSecond.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA437B1F16101800C5634F /* AssetsSecond.xcassets */; };
+		2ABA43811F18B4FC00C5634F /* AboutUsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA437F1F18B4FC00C5634F /* AboutUsController.m */; };
+		2ABA43821F18B4FC00C5634F /* AboutUsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA437F1F18B4FC00C5634F /* AboutUsController.m */; };
+		2ABA43831F18B4FC00C5634F /* AboutUsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA43801F18B4FC00C5634F /* AboutUsController.xib */; };
+		2ABA43841F18B4FC00C5634F /* AboutUsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA43801F18B4FC00C5634F /* AboutUsController.xib */; };
+		2ABA43881F18BE3200C5634F /* MessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA43861F18BE3200C5634F /* MessageController.m */; };
+		2ABA43891F18BE3200C5634F /* MessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA43861F18BE3200C5634F /* MessageController.m */; };
+		2ABA438A1F18BE3200C5634F /* MessageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA43871F18BE3200C5634F /* MessageController.xib */; };
+		2ABA438B1F18BE3200C5634F /* MessageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA43871F18BE3200C5634F /* MessageController.xib */; };
+		2ABA438E1F18CD2D00C5634F /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA438D1F18CD2D00C5634F /* SettingController.m */; };
+		2ABA438F1F18CD2D00C5634F /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA438D1F18CD2D00C5634F /* SettingController.m */; };
 		31184A910FE16C22D163DE8F /* libPods-IMLottery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE8B43C3DEC4318721C3F4A /* libPods-IMLottery.a */; };
 		B27943361D6A9D9D007749DC /* bjdc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943191D6A9D9D007749DC /* bjdc_howto.html */; };
 		B27943371D6A9D9D007749DC /* coupon_help.html in Resources */ = {isa = PBXBuildFile; fileRef = B279431A1D6A9D9D007749DC /* coupon_help.html */; };
@@ -298,6 +308,14 @@
 		2ABA43781F1609E000C5634F /* IMLottery copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "IMLottery copy-Info.plist"; path = "/Users/qianbaoeo/Desktop/LWPrivateProj/LWLottery/IMLottery copy-Info.plist"; sourceTree = "<absolute>"; };
 		2ABA43791F160E4100C5634F /* InfoSecond.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InfoSecond.plist; sourceTree = "<group>"; };
 		2ABA437B1F16101800C5634F /* AssetsSecond.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = AssetsSecond.xcassets; path = IMLottery/AssetsSecond.xcassets; sourceTree = "<group>"; };
+		2ABA437E1F18B4FC00C5634F /* AboutUsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsController.h; sourceTree = "<group>"; };
+		2ABA437F1F18B4FC00C5634F /* AboutUsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsController.m; sourceTree = "<group>"; };
+		2ABA43801F18B4FC00C5634F /* AboutUsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutUsController.xib; sourceTree = "<group>"; };
+		2ABA43851F18BE3200C5634F /* MessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageController.h; sourceTree = "<group>"; };
+		2ABA43861F18BE3200C5634F /* MessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageController.m; sourceTree = "<group>"; };
+		2ABA43871F18BE3200C5634F /* MessageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageController.xib; sourceTree = "<group>"; };
+		2ABA438C1F18CD2D00C5634F /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		2ABA438D1F18CD2D00C5634F /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
 		B27943191D6A9D9D007749DC /* bjdc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bjdc_howto.html; sourceTree = "<group>"; };
 		B279431A1D6A9D9D007749DC /* coupon_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = coupon_help.html; sourceTree = "<group>"; };
 		B279431B1D6A9D9D007749DC /* credit_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credit_help.html; sourceTree = "<group>"; };
@@ -453,6 +471,11 @@
 				2A6690261F136F9D008C1951 /* HelpCenterController.m */,
 				2A66902A1F137601008C1951 /* LocalHtmlVC.h */,
 				2A66902B1F137601008C1951 /* LocalHtmlVC.m */,
+				2ABA437E1F18B4FC00C5634F /* AboutUsController.h */,
+				2ABA437F1F18B4FC00C5634F /* AboutUsController.m */,
+				2ABA43801F18B4FC00C5634F /* AboutUsController.xib */,
+				2ABA438C1F18CD2D00C5634F /* SettingController.h */,
+				2ABA438D1F18CD2D00C5634F /* SettingController.m */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -500,6 +523,9 @@
 				2A668FFE1F1355C2008C1951 /* ZixunMoreListCell.xib */,
 				2A6690011F13564C008C1951 /* ZixunListMoreModel.h */,
 				2A6690021F13564C008C1951 /* ZixunListMoreModel.m */,
+				2ABA43851F18BE3200C5634F /* MessageController.h */,
+				2ABA43861F18BE3200C5634F /* MessageController.m */,
+				2ABA43871F18BE3200C5634F /* MessageController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -835,6 +861,8 @@
 				2ABA434F1F1609DF00C5634F /* jczq_howto.html in Resources */,
 				2ABA43501F1609DF00C5634F /* ssc_howto.html in Resources */,
 				2ABA43511F1609DF00C5634F /* bjdc_howto.html in Resources */,
+				2ABA43841F18B4FC00C5634F /* AboutUsController.xib in Resources */,
+				2ABA438B1F18BE3200C5634F /* MessageController.xib in Resources */,
 				2ABA43521F1609DF00C5634F /* MineController.xib in Resources */,
 				2ABA43531F1609DF00C5634F /* HistoryController.xib in Resources */,
 				2ABA43541F1609DF00C5634F /* x3d_howto.html in Resources */,
@@ -884,6 +912,7 @@
 				2A668FA71F0E2E33008C1951 /* HistoryController.xib in Resources */,
 				B27943501D6A9D9D007749DC /* x3d_howto.html in Resources */,
 				B279433D1D6A9D9D007749DC /* help.html in Resources */,
+				2ABA438A1F18BE3200C5634F /* MessageController.xib in Resources */,
 				2A668FE71F0F7A4F008C1951 /* ActivityListCell.xib in Resources */,
 				B279433C1D6A9D9D007749DC /* group_record.html in Resources */,
 				B27943451D6A9D9D007749DC /* kl8_howto.html in Resources */,
@@ -903,6 +932,7 @@
 				2ABA437A1F160E4100C5634F /* InfoSecond.plist in Resources */,
 				B27943471D6A9D9D007749DC /* networkconnectedfailed.html in Resources */,
 				B279434A1D6A9D9D007749DC /* qlc_howto.html in Resources */,
+				2ABA43831F18B4FC00C5634F /* AboutUsController.xib in Resources */,
 				B27943431D6A9D9D007749DC /* k2_howto.html in Resources */,
 				B279434B1D6A9D9D007749DC /* qxc_howto.html in Resources */,
 				B27943521D6A9D9D007749DC /* znzh.html in Resources */,
@@ -1050,6 +1080,7 @@
 				2ABA432F1F1609DF00C5634F /* MyToast.m in Sources */,
 				2ABA43301F1609DF00C5634F /* ChangeTablebar.m in Sources */,
 				2ABA43311F1609DF00C5634F /* HomeController.m in Sources */,
+				2ABA438F1F18CD2D00C5634F /* SettingController.m in Sources */,
 				2ABA43321F1609DF00C5634F /* UIView+Extension.m in Sources */,
 				2ABA43331F1609DF00C5634F /* LocalHtmlVC.m in Sources */,
 				2ABA43341F1609DF00C5634F /* main.m in Sources */,
@@ -1062,11 +1093,13 @@
 				2ABA433B1F1609DF00C5634F /* UIColor+Extension.m in Sources */,
 				2ABA433C1F1609DF00C5634F /* NetworkTool.m in Sources */,
 				2ABA433D1F1609DF00C5634F /* ActivityListCell.m in Sources */,
+				2ABA43891F18BE3200C5634F /* MessageController.m in Sources */,
 				2ABA433E1F1609DF00C5634F /* LWNavController.m in Sources */,
 				2ABA433F1F1609DF00C5634F /* HtmlWebVC.m in Sources */,
 				2ABA43401F1609DF00C5634F /* BaseUI.m in Sources */,
 				2ABA43411F1609DF00C5634F /* README.md in Sources */,
 				2ABA43421F1609DF00C5634F /* LLARingSpinnerView.m in Sources */,
+				2ABA43821F18B4FC00C5634F /* AboutUsController.m in Sources */,
 				2ABA43431F1609DF00C5634F /* MineController.m in Sources */,
 				2ABA43441F1609DF00C5634F /* HelpCenterController.m in Sources */,
 				2ABA43451F1609DF00C5634F /* ActivityView.m in Sources */,
@@ -1100,6 +1133,7 @@
 				2A668FBA1F0E3106008C1951 /* MyToast.m in Sources */,
 				2A668FE21F0F618C008C1951 /* ChangeTablebar.m in Sources */,
 				2A668FA11F0E2E22008C1951 /* HomeController.m in Sources */,
+				2ABA438E1F18CD2D00C5634F /* SettingController.m in Sources */,
 				2A668F5D1F0DD352008C1951 /* UIView+Extension.m in Sources */,
 				2A66902C1F137601008C1951 /* LocalHtmlVC.m in Sources */,
 				B28F60C31D6436730073813B /* main.m in Sources */,
@@ -1112,11 +1146,13 @@
 				2A668F5C1F0DD352008C1951 /* UIColor+Extension.m in Sources */,
 				2A668FDF1F0F264D008C1951 /* NetworkTool.m in Sources */,
 				2A668FE61F0F7A4F008C1951 /* ActivityListCell.m in Sources */,
+				2ABA43881F18BE3200C5634F /* MessageController.m in Sources */,
 				2A668F9C1F0E2D6D008C1951 /* LWNavController.m in Sources */,
 				2A668FC01F0E31A0008C1951 /* HtmlWebVC.m in Sources */,
 				2A668FC31F0E31DB008C1951 /* BaseUI.m in Sources */,
 				2A668F5B1F0DD352008C1951 /* README.md in Sources */,
 				2A668FDB1F0E339B008C1951 /* LLARingSpinnerView.m in Sources */,
+				2ABA43811F18B4FC00C5634F /* AboutUsController.m in Sources */,
 				2A668FAB1F0E2E41008C1951 /* MineController.m in Sources */,
 				2A6690271F136F9D008C1951 /* HelpCenterController.m in Sources */,
 				2A668FDA1F0E339B008C1951 /* ActivityView.m in Sources */,

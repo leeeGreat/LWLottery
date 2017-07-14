@@ -5,6 +5,7 @@
 //  Created by qianbaoeo on 2017/7/6.
 //  Copyright © 2017年 feng-Mac. All rights reserved.
 //
+#import "MessageController.h"
 #import "ActivityView.h"
 #import "SecondController.h"
 #import "ZixunlistCell.h"
@@ -35,6 +36,10 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.rightBtn.hidden = NO;
+    [self.rightBtn setTitle:@"消息" forState:UIControlStateNormal];
+    
+    [self requestAnalysize];
     // Do any additional setup after loading the view from its nib.
     self.tableView;
     
@@ -297,7 +302,7 @@
 }
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 120;
+    return 170;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -369,7 +374,7 @@
     lunboScrollView.pagingEnabled = YES;
 
     NSLog(@"iconsCount--%ld",iconsCount);
-    for (int i=0; i<iconsCount+1; i++) {
+    for (int i=0; i<iconsCount; i++) {
         LunboListModel *model = [_lunboListMArray safe_objectAtIndex:i];
         NSLog(@"iconUrlStr--%@",model.mapAddress);
         UIImageView *lunboIconView = [[UIImageView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH*i, 0, SCREEN_WIDTH, 100)];
@@ -414,7 +419,7 @@
     }
     else
     {
-        rotateTimer = [NSTimer scheduledTimerWithTimeInterval:1.5 target:self selector:@selector(changeScrollViewOffset) userInfo:nil repeats:YES];
+        [self addTimer];
     }
     
     
@@ -442,35 +447,57 @@
 #pragma uiscrollviewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    int page = scrollView.contentOffset.x / scrollView.frame.size.width;
-    //    NSLog(@"%d", page);
-    if (page==_lunboListMArray.count) {
-        page = 0;
-    }
+    pageControl.currentPage = scrollView.contentOffset.x/SCREENWIDTH;
     
-    // 设置页码
-    pageControl.currentPage = page;
 }
+
 
 
 #pragma uiscrollviewDelegate
 
-- (void)changeScrollViewOffset
+- (void)nextImage
 {
-    CGPoint point = lunboScrollView.contentOffset;
-    if (point.x>=(_lunboListMArray.count)*SCREEN_WIDTH) {
-        lunboScrollView.contentOffset = CGPointMake(0, 0);
-        [UIView animateWithDuration:0.5 animations:^{
-            lunboScrollView.contentOffset = CGPointMake(SCREEN_WIDTH, 0);
-        }];
-
+    int page = lunboScrollView.contentOffset.x/SCREENWIDTH;
+//    NSLog(@"page--%d",page);
+    if (page==_lunboListMArray.count) {
+        page = 0;
     }
     else
     {
-        [UIView animateWithDuration:0.5 animations:^{
-            lunboScrollView.contentOffset = CGPointMake(point.x+SCREEN_WIDTH, point.y);
-        }];
+        page++;
     }
+    
+    CGFloat x = page*lunboScrollView.frame.size.width;
+    
+   
+    if (x==SCREENWIDTH*(_lunboListMArray.count)) {
+        lunboScrollView.contentOffset = CGPointMake(0, 0);
+        pageControl.currentPage = 0;
+    }
+    else
+    {
+        lunboScrollView.contentOffset = CGPointMake(x, 0);
+        pageControl.currentPage = x/SCREENWIDTH;
+    }
+
+    
+    
+    
+    
+//    CGPoint point = lunboScrollView.contentOffset;
+//    if (point.x==(_lunboListMArray.count-1)*SCREEN_WIDTH) {
+////        lunboScrollView.contentOffset = CGPointMake(0, 0);
+//        [UIView animateWithDuration:0.5 animations:^{
+//            lunboScrollView.contentOffset = CGPointMake(point.x+SCREEN_WIDTH, point.y);
+//        }];
+//
+//    }
+//    else
+//    {
+//        [UIView animateWithDuration:0.5 animations:^{
+//            lunboScrollView.contentOffset = CGPointMake(point.x+SCREEN_WIDTH, point.y);
+//        }];
+//    }
 
     
 }
@@ -502,4 +529,56 @@
 {
     [[ActivityView shareAcctivity] hiddeActivity];
 }
+
+- (void)requestAnalysize
+{
+//    http://client.310win.com/Default.aspx?transcode=922&deviceid=1352442&client=2&version=4.0
+//    msg	{"Params":{"articletype":0},"pageindex":"1"}
+//    msg	{"pageindex":"1"}
+    NSString *urlStr = @"http://client.310win.com/Default.aspx?transcode=922&deviceid=1352442&client=2&version=4.0";
+    NSDictionary *params = @{@"articletype":@(0),@"pageindex":@"1"};
+    [NetworkTool requestAFURL:urlStr httpMethod:1 parameters:params succeed:^(id json) {
+        NSLog(@"json--%@",json);
+    } failure:^(NSError *error) {
+        
+    }];
+}
+
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+//    关闭定时器(注意点; 定时器一旦被关闭,无法再开启)
+ //    [self.timer invalidate];
+     [self removeTimer];
+}
+
+ - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+ //    开启定时器
+     [self addTimer];
+}
+
+ /**
+    100  *  开启定时器
+    101  */
+- (void)addTimer{
+
+    rotateTimer= [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(nextImage) userInfo:nil repeats:YES];
+}
+ /**
+     108  *  关闭定时器
+     109  */
+ - (void)removeTimer
+ {
+    [rotateTimer invalidate];
+ }
+
+//重写父view的方法
+- (void)rightBtnPress
+{
+    NSLog(@"rightBtnPress");
+    MessageController *messageVC = [[MessageController alloc] init];
+    [self.navigationController pushViewController:messageVC animated:YES];
+}
+
 @end

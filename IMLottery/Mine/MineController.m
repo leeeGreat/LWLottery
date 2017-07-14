@@ -5,6 +5,8 @@
 //  Created by qianbaoeo on 2017/7/6.
 //  Copyright © 2017年 feng-Mac. All rights reserved.
 //
+#import "SettingController.h"
+#import "AboutUsController.h"
 #import "HelpCenterController.h"
 #import "HtmlWebVC.h"
 #import "MineController.h"
@@ -17,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.rightBtn.hidden = NO;
+    [self.rightBtn setTitle:@"设置" forState:UIControlStateNormal];
     // Do any additional setup after loading the view from its nib.
     self.titleLabel.text = @"个人中心";
     NSLog(@"minecontroller");
@@ -53,7 +57,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
    
-    return 3;
+    return 5;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -67,7 +71,8 @@
     if (indexPath.row==0) {
         cell.textLabel.text = @"清除缓存";
         UILabel *accessoryLab  = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 60, 20)];
-        
+        accessoryLab.textColor = [UIColor lightGrayColor];
+        accessoryLab.font = [UIFont systemFontOfSize:14];
         NSUInteger bytesCache = [[SDImageCache sharedImageCache] getSize];
         //换算成 MB (注意iOS中的字节之间的换算是1000不是1024)
         float MBCache = bytesCache/1000/1000;
@@ -82,6 +87,21 @@
     else if (indexPath.row==2) {
         cell.textLabel.text = @"帮助中心";
     }
+    else if (indexPath.row==3) {
+        cell.textLabel.text = @"马上评价";
+    }
+    else if (indexPath.row==4) {
+        cell.textLabel.text = @"当前版本";
+        NSString *version = [self getAppVersion];
+        UILabel *accessoryLab  = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 40, 20)];
+        accessoryLab.textColor = [UIColor lightGrayColor];
+        accessoryLab.font = [UIFont systemFontOfSize:14];
+        accessoryLab.text =version;
+        cell.accessoryView = accessoryLab;
+    }
+   
+
+
     return cell;
 }
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -112,9 +132,9 @@
     }
     else if(indexPath.row==1)
     {
-        HtmlWebVC *web = [[HtmlWebVC alloc] init];
-        web.urlStr = @"http://www.zhuoyicp.com";
-        [self.navigationController pushViewController:web animated:YES];
+
+        AboutUsController *aboutVC = [[AboutUsController alloc] init];
+        [self.navigationController pushViewController:aboutVC animated:YES];
     }
     else if(indexPath.row==2)
     {
@@ -122,7 +142,32 @@
         [self.navigationController pushViewController:helpCenterVC animated:YES];
         
     }
+    else if(indexPath.row==3)
+    {
+        
+        NSString *myAppID = APPID;
+        //跳转  appstore
+        NSString *str = [NSString stringWithFormat:
+                         @"itms-apps://itunes.apple.com/cn/app/jie-zou-da-shi/id%@?mt=8",
+                         myAppID ];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+        
+    }
+}
 
+- (NSString *)getAppVersion
+{
+    NSString *currentVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+    currentVersion = [NSString stringWithFormat:@"V%@", currentVersion];
+    return currentVersion;
+}
+
+//重写父类方法
+- (void)rightBtnPress
+{
+    NSLog(@"点击了设置按钮");
+    SettingController *setVC = [[SettingController alloc] init];
+    [self.navigationController pushViewController:setVC animated:YES];
 }
 
 #pragma tableviewDelegates
