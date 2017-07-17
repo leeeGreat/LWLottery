@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IMLottery/History/HistoryController.m"
-            timestampString = "521715778.177003"
+            timestampString = "521976722.231766"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "-getActivityData"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IMLottery/Home/HomeController.m"
-            timestampString = "521715778.177003"
+            timestampString = "521972002.750286"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "513"
-            endingLineNumber = "513"
+            startingLineNumber = "520"
+            endingLineNumber = "520"
             landmarkName = "-tapIconViewAction:"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IMLottery/Home/HomeController.m"
-            timestampString = "521715778.177003"
+            timestampString = "521972002.750286"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "519"
-            endingLineNumber = "519"
+            startingLineNumber = "526"
+            endingLineNumber = "526"
             landmarkName = "-tapIconViewAction:"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IMLottery/Home/HomeController.m"
-            timestampString = "521715778.177003"
+            timestampString = "521972002.750286"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "377"
-            endingLineNumber = "377"
+            startingLineNumber = "384"
+            endingLineNumber = "384"
             landmarkName = "-addHeaderView"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,7 +154,7 @@
                   moduleName = "IMLottery"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/qianbaoeo/Desktop/LWPrivateProj/LWLottery/IMLottery/Public/BaseViewController.m"
-                  timestampString = "521712343.961313"
+                  timestampString = "521976933.400155"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "109"
@@ -169,7 +169,7 @@
                   moduleName = "IMLottery"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/qianbaoeo/Desktop/LWPrivateProj/LWLottery/IMLottery/Public/BaseViewController.m"
-                  timestampString = "521712343.964619"
+                  timestampString = "521976933.401575"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "109"
@@ -202,12 +202,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IMLottery/Home/HomeController.m"
-            timestampString = "521715778.177003"
+            timestampString = "521972002.750286"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "-requestGetAboutUs"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IMLottery/History/HistoryController.m"
+            timestampString = "521976860.304062"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

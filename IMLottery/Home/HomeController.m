@@ -16,6 +16,7 @@
 #import "HomeController.h"
 //webview请求超时时间
 #define TIMEOUT 10
+
 @interface HomeController ()<UIWebViewDelegate,UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate,UIGestureRecognizerDelegate>
 @property (nonatomic,strong) NSString *url;
 //轮播，彩票，资讯
@@ -33,9 +34,11 @@
     UIPageControl *pageControl;
     NSTimer *rotateTimer;
     UIScrollView *lunboScrollView;
+        
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.rightBtn.hidden = NO;
     [self.rightBtn setTitle:@"消息" forState:UIControlStateNormal];
     
@@ -44,6 +47,10 @@
     self.tableView;
     
     self.titleLabel.text = @"首页";
+       
+    
+    
+    
      self.titleView.backgroundColor = UIColorFromRGB(NAV_BAR_COLOR);
 //    [self requestHomeInfo];
     
@@ -580,5 +587,8 @@
     MessageController *messageVC = [[MessageController alloc] init];
     [self.navigationController pushViewController:messageVC animated:YES];
 }
+
+
+
 
 @end

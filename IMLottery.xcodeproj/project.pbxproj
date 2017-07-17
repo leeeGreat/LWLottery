@@ -149,6 +149,12 @@
 		2ABA438B1F18BE3200C5634F /* MessageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA43871F18BE3200C5634F /* MessageController.xib */; };
 		2ABA438E1F18CD2D00C5634F /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA438D1F18CD2D00C5634F /* SettingController.m */; };
 		2ABA438F1F18CD2D00C5634F /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA438D1F18CD2D00C5634F /* SettingController.m */; };
+		2ABA439E1F1CB41700C5634F /* ForcastModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA439D1F1CB41700C5634F /* ForcastModel.m */; };
+		2ABA439F1F1CB41700C5634F /* ForcastModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA439D1F1CB41700C5634F /* ForcastModel.m */; };
+		2ABA43A31F1CB5A800C5634F /* ForcastListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA43A11F1CB5A800C5634F /* ForcastListCell.m */; };
+		2ABA43A41F1CB5A800C5634F /* ForcastListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA43A11F1CB5A800C5634F /* ForcastListCell.m */; };
+		2ABA43A51F1CB5A800C5634F /* ForcastListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA43A21F1CB5A800C5634F /* ForcastListCell.xib */; };
+		2ABA43A61F1CB5A800C5634F /* ForcastListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA43A21F1CB5A800C5634F /* ForcastListCell.xib */; };
 		31184A910FE16C22D163DE8F /* libPods-IMLottery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE8B43C3DEC4318721C3F4A /* libPods-IMLottery.a */; };
 		B27943361D6A9D9D007749DC /* bjdc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943191D6A9D9D007749DC /* bjdc_howto.html */; };
 		B27943371D6A9D9D007749DC /* coupon_help.html in Resources */ = {isa = PBXBuildFile; fileRef = B279431A1D6A9D9D007749DC /* coupon_help.html */; };
@@ -316,6 +322,11 @@
 		2ABA43871F18BE3200C5634F /* MessageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageController.xib; sourceTree = "<group>"; };
 		2ABA438C1F18CD2D00C5634F /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
 		2ABA438D1F18CD2D00C5634F /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		2ABA439C1F1CB41700C5634F /* ForcastModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForcastModel.h; sourceTree = "<group>"; };
+		2ABA439D1F1CB41700C5634F /* ForcastModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForcastModel.m; sourceTree = "<group>"; };
+		2ABA43A01F1CB5A800C5634F /* ForcastListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForcastListCell.h; sourceTree = "<group>"; };
+		2ABA43A11F1CB5A800C5634F /* ForcastListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForcastListCell.m; sourceTree = "<group>"; };
+		2ABA43A21F1CB5A800C5634F /* ForcastListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForcastListCell.xib; sourceTree = "<group>"; };
 		B27943191D6A9D9D007749DC /* bjdc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bjdc_howto.html; sourceTree = "<group>"; };
 		B279431A1D6A9D9D007749DC /* coupon_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = coupon_help.html; sourceTree = "<group>"; };
 		B279431B1D6A9D9D007749DC /* credit_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credit_help.html; sourceTree = "<group>"; };
@@ -456,6 +467,11 @@
 				2A668FE51F0F7A4F008C1951 /* ActivityListCell.xib */,
 				2A668FE81F0F82AA008C1951 /* ActivityModel.h */,
 				2A668FE91F0F82AA008C1951 /* ActivityModel.m */,
+				2ABA439C1F1CB41700C5634F /* ForcastModel.h */,
+				2ABA439D1F1CB41700C5634F /* ForcastModel.m */,
+				2ABA43A01F1CB5A800C5634F /* ForcastListCell.h */,
+				2ABA43A11F1CB5A800C5634F /* ForcastListCell.m */,
+				2ABA43A21F1CB5A800C5634F /* ForcastListCell.xib */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -884,6 +900,7 @@
 				2ABA43651F1609DF00C5634F /* jxy11_howto.html in Resources */,
 				2ABA43661F1609DF00C5634F /* networkconnectedfailed.html in Resources */,
 				2ABA43671F1609DF00C5634F /* qlc_howto.html in Resources */,
+				2ABA43A61F1CB5A800C5634F /* ForcastListCell.xib in Resources */,
 				2ABA43681F1609DF00C5634F /* k2_howto.html in Resources */,
 				2ABA43691F1609DF00C5634F /* qxc_howto.html in Resources */,
 				2ABA436A1F1609DF00C5634F /* znzh.html in Resources */,
@@ -910,6 +927,7 @@
 				B27943361D6A9D9D007749DC /* bjdc_howto.html in Resources */,
 				2A668FAC1F0E2E41008C1951 /* MineController.xib in Resources */,
 				2A668FA71F0E2E33008C1951 /* HistoryController.xib in Resources */,
+				2ABA43A51F1CB5A800C5634F /* ForcastListCell.xib in Resources */,
 				B27943501D6A9D9D007749DC /* x3d_howto.html in Resources */,
 				B279433D1D6A9D9D007749DC /* help.html in Resources */,
 				2ABA438A1F18BE3200C5634F /* MessageController.xib in Resources */,
@@ -1070,6 +1088,7 @@
 				2ABA43251F1609DF00C5634F /* LunboListModel.m in Sources */,
 				2ABA43261F1609DF00C5634F /* UIView+SDExtension.m in Sources */,
 				2ABA43271F1609DF00C5634F /* ZixunListModel.m in Sources */,
+				2ABA43A41F1CB5A800C5634F /* ForcastListCell.m in Sources */,
 				2ABA43281F1609DF00C5634F /* NSDictionary+Extension.m in Sources */,
 				2ABA43291F1609DF00C5634F /* MytableBarVC.m in Sources */,
 				2ABA432A1F1609DF00C5634F /* GiFHUD.m in Sources */,
@@ -1102,6 +1121,7 @@
 				2ABA43821F18B4FC00C5634F /* AboutUsController.m in Sources */,
 				2ABA43431F1609DF00C5634F /* MineController.m in Sources */,
 				2ABA43441F1609DF00C5634F /* HelpCenterController.m in Sources */,
+				2ABA439F1F1CB41700C5634F /* ForcastModel.m in Sources */,
 				2ABA43451F1609DF00C5634F /* ActivityView.m in Sources */,
 				2ABA43461F1609DF00C5634F /* LottoryListModel.m in Sources */,
 				2ABA43471F1609DF00C5634F /* SDRefreshHeaderView.m in Sources */,
@@ -1123,6 +1143,7 @@
 				2A668FF01F0F9835008C1951 /* LunboListModel.m in Sources */,
 				2A668FD41F0E3352008C1951 /* UIView+SDExtension.m in Sources */,
 				2A668FF31F0F98AD008C1951 /* ZixunListModel.m in Sources */,
+				2ABA43A31F1CB5A800C5634F /* ForcastListCell.m in Sources */,
 				2A668F721F0DD564008C1951 /* NSDictionary+Extension.m in Sources */,
 				2A668FAF1F0E2EB0008C1951 /* MytableBarVC.m in Sources */,
 				2A668F6E1F0DD564008C1951 /* GiFHUD.m in Sources */,
@@ -1155,6 +1176,7 @@
 				2ABA43811F18B4FC00C5634F /* AboutUsController.m in Sources */,
 				2A668FAB1F0E2E41008C1951 /* MineController.m in Sources */,
 				2A6690271F136F9D008C1951 /* HelpCenterController.m in Sources */,
+				2ABA439E1F1CB41700C5634F /* ForcastModel.m in Sources */,
 				2A668FDA1F0E339B008C1951 /* ActivityView.m in Sources */,
 				2A668FED1F0F934E008C1951 /* LottoryListModel.m in Sources */,
 				2A668FD21F0E3352008C1951 /* SDRefreshHeaderView.m in Sources */,
