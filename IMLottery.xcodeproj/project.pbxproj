@@ -155,6 +155,10 @@
 		2ABA43A41F1CB5A800C5634F /* ForcastListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA43A11F1CB5A800C5634F /* ForcastListCell.m */; };
 		2ABA43A51F1CB5A800C5634F /* ForcastListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA43A21F1CB5A800C5634F /* ForcastListCell.xib */; };
 		2ABA43A61F1CB5A800C5634F /* ForcastListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA43A21F1CB5A800C5634F /* ForcastListCell.xib */; };
+		2ABA43AA1F1DDB9200C5634F /* PlayInstructionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA43A81F1DDB9000C5634F /* PlayInstructionController.m */; };
+		2ABA43AB1F1DDB9200C5634F /* PlayInstructionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA43A81F1DDB9000C5634F /* PlayInstructionController.m */; };
+		2ABA43AC1F1DDB9200C5634F /* PlayInstructionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA43A91F1DDB9000C5634F /* PlayInstructionController.xib */; };
+		2ABA43AD1F1DDB9200C5634F /* PlayInstructionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA43A91F1DDB9000C5634F /* PlayInstructionController.xib */; };
 		31184A910FE16C22D163DE8F /* libPods-IMLottery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE8B43C3DEC4318721C3F4A /* libPods-IMLottery.a */; };
 		B27943361D6A9D9D007749DC /* bjdc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B27943191D6A9D9D007749DC /* bjdc_howto.html */; };
 		B27943371D6A9D9D007749DC /* coupon_help.html in Resources */ = {isa = PBXBuildFile; fileRef = B279431A1D6A9D9D007749DC /* coupon_help.html */; };
@@ -327,6 +331,9 @@
 		2ABA43A01F1CB5A800C5634F /* ForcastListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForcastListCell.h; sourceTree = "<group>"; };
 		2ABA43A11F1CB5A800C5634F /* ForcastListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForcastListCell.m; sourceTree = "<group>"; };
 		2ABA43A21F1CB5A800C5634F /* ForcastListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForcastListCell.xib; sourceTree = "<group>"; };
+		2ABA43A71F1DDB9000C5634F /* PlayInstructionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayInstructionController.h; sourceTree = "<group>"; };
+		2ABA43A81F1DDB9000C5634F /* PlayInstructionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayInstructionController.m; sourceTree = "<group>"; };
+		2ABA43A91F1DDB9000C5634F /* PlayInstructionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayInstructionController.xib; sourceTree = "<group>"; };
 		B27943191D6A9D9D007749DC /* bjdc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bjdc_howto.html; sourceTree = "<group>"; };
 		B279431A1D6A9D9D007749DC /* coupon_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = coupon_help.html; sourceTree = "<group>"; };
 		B279431B1D6A9D9D007749DC /* credit_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credit_help.html; sourceTree = "<group>"; };
@@ -472,6 +479,9 @@
 				2ABA43A01F1CB5A800C5634F /* ForcastListCell.h */,
 				2ABA43A11F1CB5A800C5634F /* ForcastListCell.m */,
 				2ABA43A21F1CB5A800C5634F /* ForcastListCell.xib */,
+				2ABA43A71F1DDB9000C5634F /* PlayInstructionController.h */,
+				2ABA43A81F1DDB9000C5634F /* PlayInstructionController.m */,
+				2ABA43A91F1DDB9000C5634F /* PlayInstructionController.xib */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -907,6 +917,7 @@
 				2ABA436B1F1609DF00C5634F /* ssq_howto.html in Resources */,
 				2ABA436C1F1609DF00C5634F /* y11_howto.html in Resources */,
 				2ABA436D1F1609DF00C5634F /* sfc_howto.html in Resources */,
+				2ABA43AD1F1DDB9200C5634F /* PlayInstructionController.xib in Resources */,
 				2ABA436E1F1609DF00C5634F /* sdRefeshView_arrow@2x.png in Resources */,
 				2ABA437D1F16217C00C5634F /* AssetsSecond.xcassets in Resources */,
 				2ABA436F1F1609DF00C5634F /* coupon_help.html in Resources */,
@@ -946,6 +957,7 @@
 				B27943441D6A9D9D007749DC /* k3_howto.html in Resources */,
 				B27943381D6A9D9D007749DC /* credit_help.html in Resources */,
 				B279433B1D6A9D9D007749DC /* gdy11_howto.html in Resources */,
+				2ABA43AC1F1DDB9200C5634F /* PlayInstructionController.xib in Resources */,
 				B27943421D6A9D9D007749DC /* jxy11_howto.html in Resources */,
 				2ABA437A1F160E4100C5634F /* InfoSecond.plist in Resources */,
 				B27943471D6A9D9D007749DC /* networkconnectedfailed.html in Resources */,
@@ -1109,6 +1121,7 @@
 				2ABA43381F1609DF00C5634F /* SDRefreshView.m in Sources */,
 				2ABA43391F1609DF00C5634F /* HistoryController.m in Sources */,
 				2ABA433A1F1609DF00C5634F /* UIColor+MyColor.m in Sources */,
+				2ABA43AB1F1DDB9200C5634F /* PlayInstructionController.m in Sources */,
 				2ABA433B1F1609DF00C5634F /* UIColor+Extension.m in Sources */,
 				2ABA433C1F1609DF00C5634F /* NetworkTool.m in Sources */,
 				2ABA433D1F1609DF00C5634F /* ActivityListCell.m in Sources */,
@@ -1164,6 +1177,7 @@
 				2A668FD31F0E3352008C1951 /* SDRefreshView.m in Sources */,
 				2A668FA61F0E2E33008C1951 /* HistoryController.m in Sources */,
 				2A668FBD1F0E3171008C1951 /* UIColor+MyColor.m in Sources */,
+				2ABA43AA1F1DDB9200C5634F /* PlayInstructionController.m in Sources */,
 				2A668F5C1F0DD352008C1951 /* UIColor+Extension.m in Sources */,
 				2A668FDF1F0F264D008C1951 /* NetworkTool.m in Sources */,
 				2A668FE61F0F7A4F008C1951 /* ActivityListCell.m in Sources */,

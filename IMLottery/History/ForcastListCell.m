@@ -24,7 +24,7 @@
 - (void)setModel:(ForcastModel *)model
 {
     self.userNameLab.text = model.username;
-    self.calcLab.text = model.calc;
+    self.calcLab.text =model.calc;
     self.hitnumLab.text = model.hitnum;
     self.awardLab.text = model.award;
     self.nextplayNameLab.text = model.nextplayname;
